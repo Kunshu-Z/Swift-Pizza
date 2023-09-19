@@ -1,31 +1,17 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< HEAD
-    "C:\\Users\\Jordan\\Source\\Repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\SwiftPizza.csproj": {}
+    "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\SwiftPizza.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Jordan\\Source\\Repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\SwiftPizza.csproj": {
+    "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\SwiftPizza.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jordan\\Source\\Repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\SwiftPizza.csproj",
+        "projectUniqueName": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\SwiftPizza.csproj",
         "projectName": "SwiftPizza",
-        "projectPath": "C:\\Users\\Jordan\\Source\\Repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\SwiftPizza.csproj",
+        "projectPath": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\SwiftPizza.csproj",
         "packagesPath": "C:\\Users\\Jordan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jordan\\Source\\Repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\obj\\",
-=======
-    "C:\\Users\\Jordan\\Source\\Repos\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\SwiftPizza.csproj": {}
-  },
-  "projects": {
-    "C:\\Users\\Jordan\\Source\\Repos\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\SwiftPizza.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\Jordan\\Source\\Repos\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\SwiftPizza.csproj",
-        "projectName": "SwiftPizza",
-        "projectPath": "C:\\Users\\Jordan\\Source\\Repos\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\SwiftPizza.csproj",
-        "packagesPath": "C:\\Users\\Jordan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jordan\\Source\\Repos\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\obj\\",
->>>>>>> 2e06d2832afd7397e6430ccf2ea160954e331bf0
+        "outputPath": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Jordan\\AppData\\Roaming\\NuGet\\NuGet.Config",

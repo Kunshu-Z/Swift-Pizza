@@ -1,14 +1,8 @@
 {
   "version": 2,
-<<<<<<< HEAD
-  "dgSpecHash": "9YJvEUzwDCT5KxBf4aO4K7XoSWD/PAo0ybst5vyQFIiP2d502YttorzhuUb8oM7TyDSWbpEUeV6h+GNHWTTQ+w==",
+  "dgSpecHash": "+DVcgGq/tinPPq5w5l+xJwDjYptrPtPoGdhT0HueEDJsEutLfJQlqmEPXanBMyDZTkQMa5LgTL4gCDiiP5Qvig==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Jordan\\Source\\Repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\SwiftPizza.csproj",
-=======
-  "dgSpecHash": "FG8gwQKPtwcmgVaIEXpXdJXAE7bCcmmVCeUXCsXMyfcCtfeIeLvSDDcp8Rctjm6OCHbYYcFO0wItTqzTMxVpOQ==",
-  "success": true,
-  "projectFilePath": "C:\\Users\\Jordan\\Source\\Repos\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\SwiftPizza.csproj",
->>>>>>> 2e06d2832afd7397e6430ccf2ea160954e331bf0
+  "projectFilePath": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\SwiftPizza.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Jordan\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\Jordan\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
@@ -194,5 +188,12 @@
     "C:\\Users\\Jordan\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\Jordan\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
