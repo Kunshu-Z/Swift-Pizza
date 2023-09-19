@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Jordan\\source\\repos\\SwiftPizza\\SwiftPizza\\SwiftPizza.csproj": {}
+    "C:\\Users\\Jordan\\Source\\Repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\SwiftPizza.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Jordan\\source\\repos\\SwiftPizza\\SwiftPizza\\SwiftPizza.csproj": {
+    "C:\\Users\\Jordan\\Source\\Repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\SwiftPizza.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jordan\\source\\repos\\SwiftPizza\\SwiftPizza\\SwiftPizza.csproj",
+        "projectUniqueName": "C:\\Users\\Jordan\\Source\\Repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\SwiftPizza.csproj",
         "projectName": "SwiftPizza",
-        "projectPath": "C:\\Users\\Jordan\\source\\repos\\SwiftPizza\\SwiftPizza\\SwiftPizza.csproj",
+        "projectPath": "C:\\Users\\Jordan\\Source\\Repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\SwiftPizza.csproj",
         "packagesPath": "C:\\Users\\Jordan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jordan\\source\\repos\\SwiftPizza\\SwiftPizza\\obj\\",
+        "outputPath": "C:\\Users\\Jordan\\Source\\Repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Jordan\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,6 +39,26 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.11, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
