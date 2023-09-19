@@ -10501,11 +10501,19 @@
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\Jordan\\Source\\Repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\SwiftPizza.csproj",
       "projectName": "SwiftPizza",
       "projectPath": "C:\\Users\\Jordan\\Source\\Repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\SwiftPizza.csproj",
       "packagesPath": "C:\\Users\\Jordan\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Jordan\\Source\\Repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\obj\\",
+=======
+      "projectUniqueName": "C:\\Users\\Jordan\\Source\\Repos\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\SwiftPizza.csproj",
+      "projectName": "SwiftPizza",
+      "projectPath": "C:\\Users\\Jordan\\Source\\Repos\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\SwiftPizza.csproj",
+      "packagesPath": "C:\\Users\\Jordan\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Jordan\\Source\\Repos\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\obj\\",
+>>>>>>> 2e06d2832afd7397e6430ccf2ea160954e331bf0
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Jordan\\AppData\\Roaming\\NuGet\\NuGet.Config",
