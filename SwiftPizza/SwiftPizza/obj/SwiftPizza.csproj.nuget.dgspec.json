@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\SwiftPizza.csproj": {}
+    "C:\\Users\\Local Admin\\Source\\Repos\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\SwiftPizza.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\SwiftPizza.csproj": {
+    "C:\\Users\\Local Admin\\Source\\Repos\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\SwiftPizza.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\SwiftPizza.csproj",
+        "projectUniqueName": "C:\\Users\\Local Admin\\Source\\Repos\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\SwiftPizza.csproj",
         "projectName": "SwiftPizza",
-        "projectPath": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\SwiftPizza.csproj",
-        "packagesPath": "C:\\Users\\Jordan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\obj\\",
+        "projectPath": "C:\\Users\\Local Admin\\Source\\Repos\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\SwiftPizza.csproj",
+        "packagesPath": "C:\\Users\\Local Admin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Local Admin\\Source\\Repos\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Jordan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Local Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,6 +22,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\sdk\\7.0.302\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -78,7 +79,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }
