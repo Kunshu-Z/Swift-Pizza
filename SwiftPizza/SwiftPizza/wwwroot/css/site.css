@@ -5,7 +5,7 @@ html {
 
 @media (min-width: 768px) {
     html {
-        font-size: 16px;
+        font-size: 20px;
     }
 }
 
@@ -14,7 +14,13 @@ html {
     min-height: 100%;
 }
 
+/* Background colour for Navbar */
+.navbar-bg {
+    background-color: rgb(204, 85, 0);
+}
+
+/* CSS for webpage body */
 body {
     margin-bottom: 60px;
-    background-color: rgb(0, 128, 0); /* Replace #RRGGBB with the desired color code */
+    background-color: rgb(255, 255, 255); 
 }
