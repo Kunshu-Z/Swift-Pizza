@@ -1,10 +1,44 @@
 ﻿@{
-    ViewData["Title"] = "Privacy Policy";
+    ViewData["Title"] = "Pizza Menu";
 }
 
 <div class="text-center">
     <h1>Swift Pizza Catalogue</h1>
-    <a href="~/Pizza/Index">View All Pizzas</a>
 </div>
 
+<!-- Menu Page -->
+<div class="container">
+    <main role="main" class="pb-3">
+        <div class="d-flex">
+            <!-- Dropdown for Pizza 1 -->
+            <div class="dropdown mr-3">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="pizza1Dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Pizza 1
+                </button>
+                <div class="dropdown-menu" aria-labelledby="pizza1Dropdown">
+                    <!-- Pizza 1 content -->
+                    <div class="pizza-info">
+                        <img src="pizza1-image.jpg" alt="Pizza 1">
+                        <p>Description of Pizza 1 goes here.</p>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <!-- Dropdown for Pizza 2 -->
+            <div class="dropdown mr-3">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="pizza2Dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Pizza 2
+                </button>
+                <div class="dropdown-menu" aria-labelledby="pizza2Dropdown">
+                    <!-- Pizza 2 content -->
+                    <div class="pizza-info">
+                        <img src="pizza2-image.jpg" alt="Pizza 2">
+                        <p>Description of Pizza 2 goes here.</p>
+                    </div>
+                </div>
+            </div>
 
+            <!-- Add more dropdowns for other pizzas as needed -->
+        </div>
+    </main>
+</div>
