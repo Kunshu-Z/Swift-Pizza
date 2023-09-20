@@ -2,8 +2,12 @@
   "ExpandedNodes": [
     "",
     "\\SwiftPizza",
-    "\\SwiftPizza\\SwiftPizza"
+    "\\SwiftPizza\\SwiftPizza",
+    "\\SwiftPizza\\SwiftPizza\\Views",
+    "\\SwiftPizza\\SwiftPizza\\Views\\Home",
+    "\\SwiftPizza\\SwiftPizza\\wwwroot",
+    "\\SwiftPizza\\SwiftPizza\\wwwroot\\css"
   ],
-  "SelectedNode": "\\SwiftPizza\\SwiftPizza\\Program.cs",
+  "SelectedNode": "\\SwiftPizza\\SwiftPizza\\Views\\Home\\Index.cshtml",
   "PreviewInSolutionExplorer": false
 }
