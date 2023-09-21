@@ -6,7 +6,7 @@ namespace SwiftPizza.Models
     {
         [Key]
 
-        public int Id { get; set; }
+        public int PizzaId { get; set; }
         [Required]
 
         public string PizzaName { get; set; }

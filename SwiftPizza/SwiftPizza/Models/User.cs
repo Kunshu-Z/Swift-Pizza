@@ -4,7 +4,7 @@ namespace SwiftPizza.Models
     public class User
     {
         [Key]
-        public int ID { get; set; }
+        public int UserID { get; set; }
 
         [Required]
 

@@ -8,7 +8,7 @@ namespace SwiftPizza.Models
         
         public string Address { get; set; }
 
-        public int Expiry { get; set; }
+        public DateTime Expiry { get; set; }
 
         public int CVV { get; set; }
     }
