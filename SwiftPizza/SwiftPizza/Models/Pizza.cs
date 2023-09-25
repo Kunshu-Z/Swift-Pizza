@@ -5,7 +5,6 @@ namespace SwiftPizza.Models
     public class Pizza
     {
         [Key]
-
         public int PizzaId { get; set; }
         [Required]
 

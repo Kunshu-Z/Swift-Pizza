@@ -1,4 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
 namespace SwiftPizza.Models
 {
     public class User
@@ -12,6 +14,10 @@ namespace SwiftPizza.Models
 
         public string Password {  get; set; }
 
-
-    }
+		//Foreign Key (CardNumber)
+		[ForeignKey("Bank")]
+		public int CardNumber { get; set; }
+		//Navigation Property
+		public Bank Bank { get; set; }
+	}
 }
