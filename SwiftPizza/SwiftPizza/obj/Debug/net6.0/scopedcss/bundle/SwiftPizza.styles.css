@@ -1,49 +1,62 @@
 /* _content/SwiftPizza/Views/Shared/_Layout.cshtml.rz.scp.css */
-/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-for details on configuring this project to bundle and minify static web assets. */
-
-a.navbar-brand[b-ntlbpz89iu] {
-  white-space: normal;
-  text-align: center;
-  word-break: break-all;
+/* Transparent Navbar */
+.navbar[b-ntlbpz89iu] {
+    background-color: transparent;
+    border: none; /* Remove any borders or box shadows */
 }
 
-a[b-ntlbpz89iu] {
-  color: #0077cc;
+/* Navbar Links Style (You can adjust these styles as needed) */
+a.navbar-brand[b-ntlbpz89iu],
+.navbar-nav .nav-link[b-ntlbpz89iu] {
+    color: white;
+    /* Add any additional styles you want for the links */
 }
 
-.btn-primary[b-ntlbpz89iu] {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
+/* Active Link Style */
+.nav-pills .nav-link.active[b-ntlbpz89iu],
+.nav-pills .show > .nav-link[b-ntlbpz89iu] {
+    color: white;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
 }
 
-.nav-pills .nav-link.active[b-ntlbpz89iu], .nav-pills .show > .nav-link[b-ntlbpz89iu] {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
-}
-
-.border-top[b-ntlbpz89iu] {
-  border-top: 1px solid #e5e5e5;
-}
-.border-bottom[b-ntlbpz89iu] {
-  border-bottom: 1px solid #e5e5e5;
-}
-
+/* Box Shadow (If needed) */
 .box-shadow[b-ntlbpz89iu] {
-  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
 }
 
+/* Accept Policy Button (You can adjust these styles as needed) */
 button.accept-policy[b-ntlbpz89iu] {
-  font-size: 1rem;
-  line-height: inherit;
+    font-size: 1rem;
+    line-height: inherit;
 }
 
+
+
+/* Footer (You can adjust these styles as needed) */
 .footer[b-ntlbpz89iu] {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  white-space: nowrap;
-  line-height: 60px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 60px;
+    color: white;
 }
+
+/* Style for the Login button */
+.login-button[b-ntlbpz89iu] {
+    background-color: #1b6ec2; /* Change the background color */
+    color: white; /* Change the text color */
+    border: none; /* Remove the button border */
+    padding: 10px 20px; /* Adjust padding as needed */
+    border-radius: 5px; /* Add rounded corners if desired */
+    font-size: 16px; /* Adjust font size as needed */
+    cursor: pointer; /* Change cursor on hover */
+}
+
+/* Hover effect for the Login button */
+.login-button:hover[b-ntlbpz89iu] {
+    background-color: #1861ac; /* Change background color on hover */
+    /* Add any other hover styles if needed */
+}
+

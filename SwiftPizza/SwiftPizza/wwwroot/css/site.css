@@ -22,5 +22,20 @@ html {
 /* CSS for webpage body */
 body {
     margin-bottom: 60px;
-    background-color: rgb(255, 255, 255); 
+    background-color: rgb(255, 255, 255);
+}
+
+/* Make text color white for elements in the navbar */
+.navbar-bg .navbar-nav .nav-link {
+    color: white !important;
+}
+
+/* Make text color white for the navbar brand */
+.navbar-bg .navbar-brand {
+    color: white !important;
+}
+
+/* Make text color white for the login button */
+.navbar-bg .login-button {
+    color: white !important;
 }

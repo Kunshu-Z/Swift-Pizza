@@ -8,46 +8,55 @@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/SwiftPizza.styles.css" asp-append-version="true" />
 </head>
-<body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light navbar-bg border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">SwiftPizza</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                        <li class="nav-item">
-                            <!--Pizzas Menu -->
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Pizzas">Pizzas</a>
-                        </li>
-                        <li class="nav-item">
-                            <!--Login Menu -->
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Login">Login</a>
-                        </li>
-                    </ul>
-                </div>
+<body id="page-body" style="background-image: url('https://i.imgur.com/5RkR7uh.png');
+            background-size: 1900px 960px;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+            color: white;">
+
+
+<header>
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light navbar-bg border-bottom box-shadow mb-3">
+        <div class="container-fluid">
+            <!-- Add the image and brand text -->
+            <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index" style="color: white;">
+                <img src="https://i.imgur.com/20hpKwF.png" alt="SwiftPizza Logo" width="70" height="80">
+                SwiftPizza
+            </a>
+            <!-- Rest of your navigation menu -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                <ul class="navbar-nav flex-grow-1">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index" style="color: white;">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy" style="color: white;">Privacy</a>
+                    </li>
+                    <li class="nav-item">
+                        <!--Pizzas Menu -->
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Pizzas" style="color: white;">Pizzas</a>
+                    </li>
+                </ul>
+                <a class="nav-link text-dark login-button" asp-area="" asp-controller="Home" asp-action="Login" style="color: white; position: absolute; right: 10px;">Login</a>
             </div>
-        </nav>
-    </header>
-    <div class="container">
+        </div>
+    </nav>
+</header>
+
+    <div class="container-fluid">
         <main role="main" class="pb-3">
-
-
             @RenderBody()
         </main>
     </div>
 
     <footer class="border-top footer text-muted">
-        <div class="container">
+        <div class="container-fluid">
             &copy; 2023 - SwiftPizza - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
     </footer>
