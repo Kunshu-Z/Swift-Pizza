@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+DVcgGq/tinPPq5w5l+xJwDjYptrPtPoGdhT0HueEDJsEutLfJQlqmEPXanBMyDZTkQMa5LgTL4gCDiiP5Qvig==",
+  "dgSpecHash": "Gmb9cEX4EJD9dnn2eM4/aZzzvNUtoLP7etDO0ISzKhcmAP3pU0oYzy0l+XUEDYgeIgrzYAW/NU1ok0yq5JW8EQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\SwiftPizza.csproj",
+  "projectFilePath": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\SwiftPizza.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Jordan\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\Jordan\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

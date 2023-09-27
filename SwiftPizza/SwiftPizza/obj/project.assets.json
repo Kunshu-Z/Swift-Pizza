@@ -10501,11 +10501,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\SwiftPizza.csproj",
+      "projectUniqueName": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\SwiftPizza.csproj",
       "projectName": "SwiftPizza",
-      "projectPath": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\SwiftPizza.csproj",
+      "projectPath": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\SwiftPizza.csproj",
       "packagesPath": "C:\\Users\\Jordan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\obj\\",
+      "outputPath": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Jordan\\AppData\\Roaming\\NuGet\\NuGet.Config",
