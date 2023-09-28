@@ -1,11 +1,11 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Authentication;
-using Microsoft.EntityFrameworkCore; // Import Entity Framework Core
+using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Security.Claims;
 using System.Threading.Tasks;
-using SwiftPizza.Models; // Import your User model
+using SwiftPizza.Models;
 using SwiftPizza.Data;
 
 namespace SwiftPizza.Views.Home
@@ -20,7 +20,7 @@ namespace SwiftPizza.Views.Home
         [BindProperty]
         public string Password { get; set; }
 
-        public LoginModel(ApplicationDbContext dbContext) // Inject your ApplicationDbContext
+        public LoginModel(ApplicationDbContext dbContext)
         {
             _dbContext = dbContext;
         }
@@ -32,44 +32,31 @@ namespace SwiftPizza.Views.Home
 
         public async Task<IActionResult> OnPostAsync()
         {
-            // Query the database to find a user with the provided email.
             var user = await _dbContext.Users.SingleOrDefaultAsync(u => u.Email == Email);
 
-            if (user != null && VerifyPassword(user.Password, Password))
+            if (user != null && user.Password == Password)
             {
                 var claims = new List<Claim>
-                {
-                    new Claim(ClaimTypes.Name, Email), // Store the user's email as a claim.
-                    // You can add more claims here if needed.
-                };
+        {
+            new Claim(ClaimTypes.Name, Email),
+            // You can add more claims here if needed.
+        };
 
                 var identity = new ClaimsIdentity(claims, "cookie");
 
                 var principal = new ClaimsPrincipal(identity);
 
-                // Sign in the user with the authentication cookie.
                 await HttpContext.SignInAsync(principal);
 
-                // Redirect to a protected resource or dashboard.
-                return RedirectToPage("/Dashboard"); // Replace with your desired redirect page.
+                // Redirect to the index page after a successful login.
+                return RedirectToPage("/Index");
             }
             else
             {
-                // Invalid credentials - show an error message.
                 ModelState.AddModelError(string.Empty, "Invalid email or password.");
                 return Page();
             }
         }
 
-        // You should implement a proper password verification method.
-        private bool VerifyPassword(string storedPasswordHash, string inputPassword)
-        {
-            // Implement your password verification logic here.
-            // This might involve using a secure hashing algorithm.
-            // Return true if the input password matches the stored hash.
-            // Otherwise, return false.
-            // Replace this with your actual password verification logic.
-            return storedPasswordHash == inputPassword;
-        }
     }
 }
