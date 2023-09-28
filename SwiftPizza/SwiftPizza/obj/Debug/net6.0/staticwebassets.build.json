@@ -1,14 +1,6 @@
 {
   "Version": 1,
-<<<<<<< HEAD
   "Hash": "U3HIPDC8d8fZfzyX33pIUMajkeXSTJPyII9dof5bI7E=",
-=======
-<<<<<<< HEAD
-  "Hash": "U3HIPDC8d8fZfzyX33pIUMajkeXSTJPyII9dof5bI7E=",
-=======
-  "Hash": "tXaVU/E9D3qMqhFLlBt5HzVw0LlYphcJ0A4pDn/WMGY=",
->>>>>>> 0294f0eef89c646ddc5bddd0b34b007e8e507d17
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
   "Source": "SwiftPizza",
   "BasePath": "_content/SwiftPizza",
   "Mode": "Default",
@@ -18,38 +10,17 @@
     {
       "Name": "SwiftPizza\\wwwroot",
       "Source": "SwiftPizza",
-<<<<<<< HEAD
       "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\wwwroot\\",
-=======
-<<<<<<< HEAD
-      "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\wwwroot\\",
-=======
-      "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\wwwroot\\",
->>>>>>> 0294f0eef89c646ddc5bddd0b34b007e8e507d17
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "BasePath": "_content/SwiftPizza",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "Identity": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\obj\\Debug\\net6.0\\scopedcss\\bundle\\SwiftPizza.styles.css",
       "SourceId": "SwiftPizza",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
-<<<<<<< HEAD
-=======
-=======
-      "Identity": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\obj\\Debug\\net6.0\\scopedcss\\bundle\\SwiftPizza.styles.css",
-      "SourceId": "SwiftPizza",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
->>>>>>> 0294f0eef89c646ddc5bddd0b34b007e8e507d17
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "BasePath": "_content/SwiftPizza",
       "RelativePath": "SwiftPizza.styles.css",
       "AssetKind": "All",
@@ -60,10 +31,6 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "OriginalItemSpec": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\obj\\Debug\\net6.0\\scopedcss\\bundle\\SwiftPizza.styles.css"
     },
     {
@@ -71,18 +38,6 @@
       "SourceId": "SwiftPizza",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
-<<<<<<< HEAD
-=======
-=======
-      "OriginalItemSpec": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\obj\\Debug\\net6.0\\scopedcss\\bundle\\SwiftPizza.styles.css"
-    },
-    {
-      "Identity": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\SwiftPizza.bundle.scp.css",
-      "SourceId": "SwiftPizza",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
->>>>>>> 0294f0eef89c646ddc5bddd0b34b007e8e507d17
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "BasePath": "_content/SwiftPizza",
       "RelativePath": "SwiftPizza.bundle.scp.css",
       "AssetKind": "All",
@@ -93,10 +48,6 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "OriginalItemSpec": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\SwiftPizza.bundle.scp.css"
     },
     {
@@ -104,18 +55,6 @@
       "SourceId": "SwiftPizza",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\wwwroot\\",
-<<<<<<< HEAD
-=======
-=======
-      "OriginalItemSpec": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\SwiftPizza.bundle.scp.css"
-    },
-    {
-      "Identity": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\wwwroot\\css\\site.css",
-      "SourceId": "SwiftPizza",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\wwwroot\\",
->>>>>>> 0294f0eef89c646ddc5bddd0b34b007e8e507d17
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "BasePath": "_content/SwiftPizza",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -129,23 +68,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "Identity": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\wwwroot\\favicon.ico",
       "SourceId": "SwiftPizza",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\wwwroot\\",
-<<<<<<< HEAD
-=======
-=======
-      "Identity": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\wwwroot\\favicon.ico",
-      "SourceId": "SwiftPizza",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\wwwroot\\",
->>>>>>> 0294f0eef89c646ddc5bddd0b34b007e8e507d17
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "BasePath": "_content/SwiftPizza",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -159,23 +85,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "Identity": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\wwwroot\\js\\site.js",
       "SourceId": "SwiftPizza",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\wwwroot\\",
-<<<<<<< HEAD
-=======
-=======
-      "Identity": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\wwwroot\\js\\site.js",
-      "SourceId": "SwiftPizza",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\wwwroot\\",
->>>>>>> 0294f0eef89c646ddc5bddd0b34b007e8e507d17
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "BasePath": "_content/SwiftPizza",
       "RelativePath": "js/site.js",
       "AssetKind": "All",
@@ -189,23 +102,10 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "Identity": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "SwiftPizza",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\wwwroot\\",
-<<<<<<< HEAD
-=======
-=======
-      "Identity": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
-      "SourceId": "SwiftPizza",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\wwwroot\\",
->>>>>>> 0294f0eef89c646ddc5bddd0b34b007e8e507d17
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "BasePath": "_content/SwiftPizza",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css",
       "AssetKind": "All",
@@ -219,23 +119,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "Identity": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "SourceId": "SwiftPizza",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\wwwroot\\",
-<<<<<<< HEAD
-=======
-=======
-      "Identity": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
-      "SourceId": "SwiftPizza",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\wwwroot\\",
->>>>>>> 0294f0eef89c646ddc5bddd0b34b007e8e507d17
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "BasePath": "_content/SwiftPizza",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css.map",
       "AssetKind": "All",
@@ -249,23 +136,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "Identity": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "SourceId": "SwiftPizza",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\wwwroot\\",
-<<<<<<< HEAD
-=======
-=======
-      "Identity": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
-      "SourceId": "SwiftPizza",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\wwwroot\\",
->>>>>>> 0294f0eef89c646ddc5bddd0b34b007e8e507d17
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "BasePath": "_content/SwiftPizza",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css",
       "AssetKind": "All",
@@ -279,23 +153,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "Identity": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "SourceId": "SwiftPizza",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\wwwroot\\",
-<<<<<<< HEAD
-=======
-=======
-      "Identity": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
-      "SourceId": "SwiftPizza",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\wwwroot\\",
->>>>>>> 0294f0eef89c646ddc5bddd0b34b007e8e507d17
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "BasePath": "_content/SwiftPizza",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -309,23 +170,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "Identity": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "SourceId": "SwiftPizza",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\wwwroot\\",
-<<<<<<< HEAD
-=======
-=======
-      "Identity": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
-      "SourceId": "SwiftPizza",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\wwwroot\\",
->>>>>>> 0294f0eef89c646ddc5bddd0b34b007e8e507d17
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "BasePath": "_content/SwiftPizza",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css",
       "AssetKind": "All",
@@ -339,23 +187,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "Identity": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "SourceId": "SwiftPizza",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\wwwroot\\",
-<<<<<<< HEAD
-=======
-=======
-      "Identity": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
-      "SourceId": "SwiftPizza",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\wwwroot\\",
->>>>>>> 0294f0eef89c646ddc5bddd0b34b007e8e507d17
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "BasePath": "_content/SwiftPizza",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "AssetKind": "All",
@@ -369,23 +204,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "Identity": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "SourceId": "SwiftPizza",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\wwwroot\\",
-<<<<<<< HEAD
-=======
-=======
-      "Identity": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
-      "SourceId": "SwiftPizza",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\wwwroot\\",
->>>>>>> 0294f0eef89c646ddc5bddd0b34b007e8e507d17
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "BasePath": "_content/SwiftPizza",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "AssetKind": "All",
@@ -399,23 +221,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "Identity": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "SwiftPizza",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\wwwroot\\",
-<<<<<<< HEAD
-=======
-=======
-      "Identity": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
-      "SourceId": "SwiftPizza",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\wwwroot\\",
->>>>>>> 0294f0eef89c646ddc5bddd0b34b007e8e507d17
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "BasePath": "_content/SwiftPizza",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "AssetKind": "All",
@@ -429,23 +238,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "Identity": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "SwiftPizza",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\wwwroot\\",
-<<<<<<< HEAD
-=======
-=======
-      "Identity": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
-      "SourceId": "SwiftPizza",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\wwwroot\\",
->>>>>>> 0294f0eef89c646ddc5bddd0b34b007e8e507d17
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "BasePath": "_content/SwiftPizza",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css",
       "AssetKind": "All",
@@ -459,23 +255,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "Identity": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "SourceId": "SwiftPizza",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\wwwroot\\",
-<<<<<<< HEAD
-=======
-=======
-      "Identity": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
-      "SourceId": "SwiftPizza",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\wwwroot\\",
->>>>>>> 0294f0eef89c646ddc5bddd0b34b007e8e507d17
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "BasePath": "_content/SwiftPizza",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "AssetKind": "All",
@@ -489,23 +272,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "Identity": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "SourceId": "SwiftPizza",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\wwwroot\\",
-<<<<<<< HEAD
-=======
-=======
-      "Identity": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
-      "SourceId": "SwiftPizza",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\wwwroot\\",
->>>>>>> 0294f0eef89c646ddc5bddd0b34b007e8e507d17
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "BasePath": "_content/SwiftPizza",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "AssetKind": "All",
@@ -519,23 +289,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "Identity": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "SourceId": "SwiftPizza",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\wwwroot\\",
-<<<<<<< HEAD
-=======
-=======
-      "Identity": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
-      "SourceId": "SwiftPizza",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\wwwroot\\",
->>>>>>> 0294f0eef89c646ddc5bddd0b34b007e8e507d17
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "BasePath": "_content/SwiftPizza",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "AssetKind": "All",
@@ -549,23 +306,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "Identity": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "SourceId": "SwiftPizza",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\wwwroot\\",
-<<<<<<< HEAD
-=======
-=======
-      "Identity": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
-      "SourceId": "SwiftPizza",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\wwwroot\\",
->>>>>>> 0294f0eef89c646ddc5bddd0b34b007e8e507d17
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "BasePath": "_content/SwiftPizza",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "AssetKind": "All",
@@ -579,23 +323,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "Identity": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "SwiftPizza",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\wwwroot\\",
-<<<<<<< HEAD
-=======
-=======
-      "Identity": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
-      "SourceId": "SwiftPizza",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\wwwroot\\",
->>>>>>> 0294f0eef89c646ddc5bddd0b34b007e8e507d17
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "BasePath": "_content/SwiftPizza",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "AssetKind": "All",
@@ -609,23 +340,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "Identity": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "SwiftPizza",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\wwwroot\\",
-<<<<<<< HEAD
-=======
-=======
-      "Identity": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
-      "SourceId": "SwiftPizza",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\wwwroot\\",
->>>>>>> 0294f0eef89c646ddc5bddd0b34b007e8e507d17
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "BasePath": "_content/SwiftPizza",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "AssetKind": "All",
@@ -639,23 +357,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "Identity": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "SwiftPizza",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\wwwroot\\",
-<<<<<<< HEAD
-=======
-=======
-      "Identity": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
-      "SourceId": "SwiftPizza",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\wwwroot\\",
->>>>>>> 0294f0eef89c646ddc5bddd0b34b007e8e507d17
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "BasePath": "_content/SwiftPizza",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "AssetKind": "All",
@@ -669,23 +374,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "Identity": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "SourceId": "SwiftPizza",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\wwwroot\\",
-<<<<<<< HEAD
-=======
-=======
-      "Identity": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
-      "SourceId": "SwiftPizza",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\wwwroot\\",
->>>>>>> 0294f0eef89c646ddc5bddd0b34b007e8e507d17
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "BasePath": "_content/SwiftPizza",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css",
       "AssetKind": "All",
@@ -699,23 +391,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "Identity": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "SourceId": "SwiftPizza",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\wwwroot\\",
-<<<<<<< HEAD
-=======
-=======
-      "Identity": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
-      "SourceId": "SwiftPizza",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\wwwroot\\",
->>>>>>> 0294f0eef89c646ddc5bddd0b34b007e8e507d17
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "BasePath": "_content/SwiftPizza",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "AssetKind": "All",
@@ -729,23 +408,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "Identity": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "SourceId": "SwiftPizza",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\wwwroot\\",
-<<<<<<< HEAD
-=======
-=======
-      "Identity": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
-      "SourceId": "SwiftPizza",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\wwwroot\\",
->>>>>>> 0294f0eef89c646ddc5bddd0b34b007e8e507d17
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "BasePath": "_content/SwiftPizza",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "AssetKind": "All",
@@ -759,23 +425,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "Identity": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "SwiftPizza",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\wwwroot\\",
-<<<<<<< HEAD
-=======
-=======
-      "Identity": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
-      "SourceId": "SwiftPizza",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\wwwroot\\",
->>>>>>> 0294f0eef89c646ddc5bddd0b34b007e8e507d17
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "BasePath": "_content/SwiftPizza",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "AssetKind": "All",
@@ -789,23 +442,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "Identity": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "SwiftPizza",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\wwwroot\\",
-<<<<<<< HEAD
-=======
-=======
-      "Identity": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
-      "SourceId": "SwiftPizza",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\wwwroot\\",
->>>>>>> 0294f0eef89c646ddc5bddd0b34b007e8e507d17
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "BasePath": "_content/SwiftPizza",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "AssetKind": "All",
@@ -819,23 +459,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "Identity": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "SwiftPizza",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\wwwroot\\",
-<<<<<<< HEAD
-=======
-=======
-      "Identity": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
-      "SourceId": "SwiftPizza",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\wwwroot\\",
->>>>>>> 0294f0eef89c646ddc5bddd0b34b007e8e507d17
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "BasePath": "_content/SwiftPizza",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "AssetKind": "All",
@@ -849,23 +476,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "Identity": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "SwiftPizza",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\wwwroot\\",
-<<<<<<< HEAD
-=======
-=======
-      "Identity": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
-      "SourceId": "SwiftPizza",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\wwwroot\\",
->>>>>>> 0294f0eef89c646ddc5bddd0b34b007e8e507d17
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "BasePath": "_content/SwiftPizza",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "AssetKind": "All",
@@ -879,23 +493,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "Identity": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "SwiftPizza",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\wwwroot\\",
-<<<<<<< HEAD
-=======
-=======
-      "Identity": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
-      "SourceId": "SwiftPizza",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\wwwroot\\",
->>>>>>> 0294f0eef89c646ddc5bddd0b34b007e8e507d17
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "BasePath": "_content/SwiftPizza",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "AssetKind": "All",
@@ -909,23 +510,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "Identity": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "SourceId": "SwiftPizza",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\wwwroot\\",
-<<<<<<< HEAD
-=======
-=======
-      "Identity": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
-      "SourceId": "SwiftPizza",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\wwwroot\\",
->>>>>>> 0294f0eef89c646ddc5bddd0b34b007e8e507d17
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "BasePath": "_content/SwiftPizza",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css",
       "AssetKind": "All",
@@ -939,23 +527,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "Identity": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "SourceId": "SwiftPizza",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\wwwroot\\",
-<<<<<<< HEAD
-=======
-=======
-      "Identity": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
-      "SourceId": "SwiftPizza",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\wwwroot\\",
->>>>>>> 0294f0eef89c646ddc5bddd0b34b007e8e507d17
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "BasePath": "_content/SwiftPizza",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "AssetKind": "All",
@@ -969,23 +544,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "Identity": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "SourceId": "SwiftPizza",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\wwwroot\\",
-<<<<<<< HEAD
-=======
-=======
-      "Identity": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
-      "SourceId": "SwiftPizza",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\wwwroot\\",
->>>>>>> 0294f0eef89c646ddc5bddd0b34b007e8e507d17
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "BasePath": "_content/SwiftPizza",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "AssetKind": "All",
@@ -999,23 +561,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "Identity": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "SwiftPizza",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\wwwroot\\",
-<<<<<<< HEAD
-=======
-=======
-      "Identity": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
-      "SourceId": "SwiftPizza",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\wwwroot\\",
->>>>>>> 0294f0eef89c646ddc5bddd0b34b007e8e507d17
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "BasePath": "_content/SwiftPizza",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "AssetKind": "All",
@@ -1029,23 +578,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "Identity": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "SwiftPizza",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\wwwroot\\",
-<<<<<<< HEAD
-=======
-=======
-      "Identity": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
-      "SourceId": "SwiftPizza",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\wwwroot\\",
->>>>>>> 0294f0eef89c646ddc5bddd0b34b007e8e507d17
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "BasePath": "_content/SwiftPizza",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "AssetKind": "All",
@@ -1059,23 +595,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "Identity": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "SwiftPizza",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\wwwroot\\",
-<<<<<<< HEAD
-=======
-=======
-      "Identity": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
-      "SourceId": "SwiftPizza",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\wwwroot\\",
->>>>>>> 0294f0eef89c646ddc5bddd0b34b007e8e507d17
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "BasePath": "_content/SwiftPizza",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "AssetKind": "All",
@@ -1089,23 +612,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "Identity": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "SwiftPizza",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\wwwroot\\",
-<<<<<<< HEAD
-=======
-=======
-      "Identity": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
-      "SourceId": "SwiftPizza",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\wwwroot\\",
->>>>>>> 0294f0eef89c646ddc5bddd0b34b007e8e507d17
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "BasePath": "_content/SwiftPizza",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "AssetKind": "All",
@@ -1119,23 +629,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "Identity": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "SwiftPizza",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\wwwroot\\",
-<<<<<<< HEAD
-=======
-=======
-      "Identity": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
-      "SourceId": "SwiftPizza",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\wwwroot\\",
->>>>>>> 0294f0eef89c646ddc5bddd0b34b007e8e507d17
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "BasePath": "_content/SwiftPizza",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "AssetKind": "All",
@@ -1149,23 +646,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "Identity": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "SourceId": "SwiftPizza",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\wwwroot\\",
-<<<<<<< HEAD
-=======
-=======
-      "Identity": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
-      "SourceId": "SwiftPizza",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\wwwroot\\",
->>>>>>> 0294f0eef89c646ddc5bddd0b34b007e8e507d17
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "BasePath": "_content/SwiftPizza",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js",
       "AssetKind": "All",
@@ -1179,23 +663,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "Identity": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "SourceId": "SwiftPizza",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\wwwroot\\",
-<<<<<<< HEAD
-=======
-=======
-      "Identity": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
-      "SourceId": "SwiftPizza",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\wwwroot\\",
->>>>>>> 0294f0eef89c646ddc5bddd0b34b007e8e507d17
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "BasePath": "_content/SwiftPizza",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "AssetKind": "All",
@@ -1209,23 +680,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "Identity": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "SourceId": "SwiftPizza",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\wwwroot\\",
-<<<<<<< HEAD
-=======
-=======
-      "Identity": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
-      "SourceId": "SwiftPizza",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\wwwroot\\",
->>>>>>> 0294f0eef89c646ddc5bddd0b34b007e8e507d17
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "BasePath": "_content/SwiftPizza",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -1239,23 +697,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "Identity": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "SwiftPizza",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\wwwroot\\",
-<<<<<<< HEAD
-=======
-=======
-      "Identity": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
-      "SourceId": "SwiftPizza",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\wwwroot\\",
->>>>>>> 0294f0eef89c646ddc5bddd0b34b007e8e507d17
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "BasePath": "_content/SwiftPizza",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
@@ -1269,23 +714,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "Identity": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "SourceId": "SwiftPizza",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\wwwroot\\",
-<<<<<<< HEAD
-=======
-=======
-      "Identity": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
-      "SourceId": "SwiftPizza",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\wwwroot\\",
->>>>>>> 0294f0eef89c646ddc5bddd0b34b007e8e507d17
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "BasePath": "_content/SwiftPizza",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js",
       "AssetKind": "All",
@@ -1299,23 +731,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "Identity": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "SourceId": "SwiftPizza",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\wwwroot\\",
-<<<<<<< HEAD
-=======
-=======
-      "Identity": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
-      "SourceId": "SwiftPizza",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\wwwroot\\",
->>>>>>> 0294f0eef89c646ddc5bddd0b34b007e8e507d17
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "BasePath": "_content/SwiftPizza",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "AssetKind": "All",
@@ -1329,23 +748,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "Identity": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "SourceId": "SwiftPizza",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\wwwroot\\",
-<<<<<<< HEAD
-=======
-=======
-      "Identity": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
-      "SourceId": "SwiftPizza",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\wwwroot\\",
->>>>>>> 0294f0eef89c646ddc5bddd0b34b007e8e507d17
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "BasePath": "_content/SwiftPizza",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "AssetKind": "All",
@@ -1359,23 +765,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "Identity": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "SourceId": "SwiftPizza",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\wwwroot\\",
-<<<<<<< HEAD
-=======
-=======
-      "Identity": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
-      "SourceId": "SwiftPizza",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\wwwroot\\",
->>>>>>> 0294f0eef89c646ddc5bddd0b34b007e8e507d17
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "BasePath": "_content/SwiftPizza",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "AssetKind": "All",
@@ -1389,23 +782,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "Identity": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "SourceId": "SwiftPizza",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\wwwroot\\",
-<<<<<<< HEAD
-=======
-=======
-      "Identity": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
-      "SourceId": "SwiftPizza",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\wwwroot\\",
->>>>>>> 0294f0eef89c646ddc5bddd0b34b007e8e507d17
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "BasePath": "_content/SwiftPizza",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js",
       "AssetKind": "All",
@@ -1419,23 +799,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "Identity": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "SourceId": "SwiftPizza",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\wwwroot\\",
-<<<<<<< HEAD
-=======
-=======
-      "Identity": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
-      "SourceId": "SwiftPizza",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\wwwroot\\",
->>>>>>> 0294f0eef89c646ddc5bddd0b34b007e8e507d17
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "BasePath": "_content/SwiftPizza",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js.map",
       "AssetKind": "All",
@@ -1449,23 +816,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "Identity": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "SourceId": "SwiftPizza",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\wwwroot\\",
-<<<<<<< HEAD
-=======
-=======
-      "Identity": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
-      "SourceId": "SwiftPizza",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\wwwroot\\",
->>>>>>> 0294f0eef89c646ddc5bddd0b34b007e8e507d17
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "BasePath": "_content/SwiftPizza",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js",
       "AssetKind": "All",
@@ -1479,23 +833,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "Identity": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "SourceId": "SwiftPizza",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\wwwroot\\",
-<<<<<<< HEAD
-=======
-=======
-      "Identity": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
-      "SourceId": "SwiftPizza",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\wwwroot\\",
->>>>>>> 0294f0eef89c646ddc5bddd0b34b007e8e507d17
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "BasePath": "_content/SwiftPizza",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js.map",
       "AssetKind": "All",
@@ -1509,23 +850,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "Identity": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\wwwroot\\lib\\bootstrap\\LICENSE",
       "SourceId": "SwiftPizza",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\wwwroot\\",
-<<<<<<< HEAD
-=======
-=======
-      "Identity": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\wwwroot\\lib\\bootstrap\\LICENSE",
-      "SourceId": "SwiftPizza",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\wwwroot\\",
->>>>>>> 0294f0eef89c646ddc5bddd0b34b007e8e507d17
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "BasePath": "_content/SwiftPizza",
       "RelativePath": "lib/bootstrap/LICENSE",
       "AssetKind": "All",
@@ -1539,23 +867,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "Identity": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "SwiftPizza",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\wwwroot\\",
-<<<<<<< HEAD
-=======
-=======
-      "Identity": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\wwwroot\\lib\\jquery\\dist\\jquery.js",
-      "SourceId": "SwiftPizza",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\wwwroot\\",
->>>>>>> 0294f0eef89c646ddc5bddd0b34b007e8e507d17
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "BasePath": "_content/SwiftPizza",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
@@ -1569,23 +884,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "Identity": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "SwiftPizza",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\wwwroot\\",
-<<<<<<< HEAD
-=======
-=======
-      "Identity": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
-      "SourceId": "SwiftPizza",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\wwwroot\\",
->>>>>>> 0294f0eef89c646ddc5bddd0b34b007e8e507d17
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "BasePath": "_content/SwiftPizza",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
@@ -1599,23 +901,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "Identity": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "SwiftPizza",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\wwwroot\\",
-<<<<<<< HEAD
-=======
-=======
-      "Identity": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
-      "SourceId": "SwiftPizza",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\wwwroot\\",
->>>>>>> 0294f0eef89c646ddc5bddd0b34b007e8e507d17
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "BasePath": "_content/SwiftPizza",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
@@ -1629,23 +918,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "Identity": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "SwiftPizza",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\wwwroot\\",
-<<<<<<< HEAD
-=======
-=======
-      "Identity": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\wwwroot\\lib\\jquery\\LICENSE.txt",
-      "SourceId": "SwiftPizza",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\wwwroot\\",
->>>>>>> 0294f0eef89c646ddc5bddd0b34b007e8e507d17
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "BasePath": "_content/SwiftPizza",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",
@@ -1659,23 +935,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
     },
     {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "Identity": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "SwiftPizza",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\wwwroot\\",
-<<<<<<< HEAD
-=======
-=======
-      "Identity": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
-      "SourceId": "SwiftPizza",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\wwwroot\\",
->>>>>>> 0294f0eef89c646ddc5bddd0b34b007e8e507d17
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "BasePath": "_content/SwiftPizza",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -1689,23 +952,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "Identity": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "SwiftPizza",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\wwwroot\\",
-<<<<<<< HEAD
-=======
-=======
-      "Identity": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
-      "SourceId": "SwiftPizza",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\wwwroot\\",
->>>>>>> 0294f0eef89c646ddc5bddd0b34b007e8e507d17
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "BasePath": "_content/SwiftPizza",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -1719,23 +969,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "Identity": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "SwiftPizza",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\wwwroot\\",
-<<<<<<< HEAD
-=======
-=======
-      "Identity": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
-      "SourceId": "SwiftPizza",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\wwwroot\\",
->>>>>>> 0294f0eef89c646ddc5bddd0b34b007e8e507d17
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "BasePath": "_content/SwiftPizza",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -1749,23 +986,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "Identity": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "SwiftPizza",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\wwwroot\\",
-<<<<<<< HEAD
-=======
-=======
-      "Identity": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
-      "SourceId": "SwiftPizza",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\wwwroot\\",
->>>>>>> 0294f0eef89c646ddc5bddd0b34b007e8e507d17
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "BasePath": "_content/SwiftPizza",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -1779,23 +1003,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "Identity": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "SwiftPizza",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\wwwroot\\",
-<<<<<<< HEAD
-=======
-=======
-      "Identity": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
-      "SourceId": "SwiftPizza",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\wwwroot\\",
->>>>>>> 0294f0eef89c646ddc5bddd0b34b007e8e507d17
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "BasePath": "_content/SwiftPizza",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
@@ -1809,23 +1020,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "Identity": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "SwiftPizza",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\wwwroot\\",
-<<<<<<< HEAD
-=======
-=======
-      "Identity": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
-      "SourceId": "SwiftPizza",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\wwwroot\\",
->>>>>>> 0294f0eef89c646ddc5bddd0b34b007e8e507d17
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "BasePath": "_content/SwiftPizza",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -1839,23 +1037,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "Identity": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "SwiftPizza",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\wwwroot\\",
-<<<<<<< HEAD
-=======
-=======
-      "Identity": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
-      "SourceId": "SwiftPizza",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\wwwroot\\",
->>>>>>> 0294f0eef89c646ddc5bddd0b34b007e8e507d17
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "BasePath": "_content/SwiftPizza",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -1869,23 +1054,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "Identity": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "SwiftPizza",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\SwiftPizza\\SwiftPizza\\SwiftPizza\\wwwroot\\",
-<<<<<<< HEAD
-=======
-=======
-      "Identity": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
-      "SourceId": "SwiftPizza",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Jordan\\source\\repos\\Kunshu-Z\\Swift-Pizza\\SwiftPizza\\SwiftPizza\\wwwroot\\",
->>>>>>> 0294f0eef89c646ddc5bddd0b34b007e8e507d17
->>>>>>> 636ea7757e7edebec7fc63251ef8ad21cc0293e0
       "BasePath": "_content/SwiftPizza",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",
