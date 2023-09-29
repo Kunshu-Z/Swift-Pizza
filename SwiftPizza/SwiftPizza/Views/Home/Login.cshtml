@@ -1,47 +1,24 @@
-﻿
-@page
+﻿@page
 @model SwiftPizza.Views.Home.LoginModel
 
 <form method="post" action="/">
     @Html.AntiForgeryToken()
 
+    <!--Section for E-mail input-->
     <div>
         <label for="eml">Email:</label>
         <input type="text" id="eml" name="eml">
     </div>
 
+    <!--Section for Password input-->
     <div>
         <label for="pwd">Password:</label>
         <input type="password" id="pwd" name="pwd">
     </div>
 
+    <!--Confirmation button-->
     <div>
         <button type="submit">Confirm</button>
     </div>
 </form>
 
-
-@*
-@page
-@model SwiftPizza.Views.Home.LoginModel
-
-<form method="post">
-    @Html.AntiForgeryToken()
-
-    <div>
-        <label for="eml">Email:</label>
-        <input type="text" id="eml" name="eml" asp-for="Email">
-        <span asp-validation-for="Email" class="text-danger"></span>
-    </div>
-
-    <div>
-        <label for="pwd">Password:</label>
-        <input type="password" id="pwd" name="pwd" asp-for="Password">
-        <span asp-validation-for="Password" class="text-danger"></span>
-    </div>
-
-    <div>
-        <button type="submit">Confirm</button>
-    </div>
-</form>
-*@

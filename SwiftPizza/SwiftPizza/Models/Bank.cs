@@ -1,15 +1,21 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿/// <summary>
+/// Bank class contains the primary key, foreign keys, and attributes which will be utilised within the Bank database table.
+/// This will be an advanced feature on the web app where the user can make a purchase through inputting card details.
+/// </summary>
+
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace SwiftPizza.Models
 {
     public class Bank
     {
-        [Key]
-        public int CardNumber { get; set; }
-        [Required]
-        public string Name { get; set; }
+		//Primary Key
+		[Key]
+        public int CardNumber { get; set; } 
 
+		//Attributes
+        [Required]
         public DateTime Expiry { get; set; }
 
         public int CVV { get; set; }
