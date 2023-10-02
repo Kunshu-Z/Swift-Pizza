@@ -1,12 +1,12 @@
+using System.ComponentModel.DataAnnotations;
+using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using Microsoft.AspNetCore.Authentication;
 using Microsoft.EntityFrameworkCore;
-using System.Collections.Generic;
 using System.Security.Claims;
 using System.Threading.Tasks;
-using SwiftPizza.Models;
 using SwiftPizza.Data;
+using SwiftPizza.Models;
 
 namespace SwiftPizza.Views.Home
 {
@@ -15,10 +15,13 @@ namespace SwiftPizza.Views.Home
         private readonly ApplicationDbContext _dbContext;
 
         [BindProperty]
-        public string Email { get; set; }
+        [Required(ErrorMessage = "Email is required.")]
+        public string Input_Email { get; set; }
 
         [BindProperty]
-        public string Password { get; set; }
+        [Required(ErrorMessage = "Password is required.")]
+        [DataType(DataType.Password)]
+        public string Input_Password { get; set; }
 
         public LoginModel(ApplicationDbContext dbContext)
         {
@@ -32,31 +35,35 @@ namespace SwiftPizza.Views.Home
 
         public async Task<IActionResult> OnPostAsync()
         {
-            var user = await _dbContext.Users.SingleOrDefaultAsync(u => u.Email == Email);
-
-            if (user != null && user.Password == Password)
+            if (ModelState.IsValid)
             {
-                var claims = new List<Claim>
-        {
-            new Claim(ClaimTypes.Name, Email),
-            // You can add more claims here if needed.
-        };
+                var user = await _dbContext.Users.SingleOrDefaultAsync(u => u.Email == Input_Email);
 
-                var identity = new ClaimsIdentity(claims, "cookie");
+                if (user != null && user.Password == Input_Password)
+                {
+                    var claims = new[]
+                    {
+                        new Claim(ClaimTypes.Name, user.FirstName), // Assuming you have a "FirstName" property in your User model
+                        // You can add more claims here if needed.
+                    };
 
-                var principal = new ClaimsPrincipal(identity);
+                    var identity = new ClaimsIdentity(claims, "cookie");
 
-                await HttpContext.SignInAsync(principal);
+                    var principal = new ClaimsPrincipal(identity);
 
-                // Redirect to the index page after a successful login.
-                return RedirectToPage("/Index");
+                    await HttpContext.SignInAsync(principal);
+
+                    // Redirect to the index page after a successful login.
+                    return RedirectToPage("/Index");
+                }
+                else
+                {
+                    ModelState.AddModelError(string.Empty, "Invalid email or password.");
+                }
             }
-            else
-            {
-                ModelState.AddModelError(string.Empty, "Invalid email or password.");
-                return Page();
-            }
+
+            // If we reach here, there was a validation error, so return to the login page.
+            return Page();
         }
-
     }
 }

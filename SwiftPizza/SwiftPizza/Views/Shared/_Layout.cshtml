@@ -27,9 +27,13 @@
                 <!-- Check if a user is logged in and display their name -->
                 @if (User.Identity.IsAuthenticated)
                 {
-                    <div class="navbar-text" style="color: white; margin-right: 10px;">
-                        @User.Identity.Name
-                    </div>
+                    var userName = dbContext.Users.FirstOrDefault(u => u.FirstName == User.Identity.Name)?.FirstName;
+                    if (!string.IsNullOrEmpty(userName))
+                    {
+                        <div class="navbar-text" style="color: white; margin-right: 10px;">
+                            @userName
+                        </div>
+                    }
                 }
                 <!-- Rest of your navigation menu -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"

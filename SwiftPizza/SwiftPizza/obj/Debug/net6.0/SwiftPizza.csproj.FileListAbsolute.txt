@@ -1166,3 +1166,4 @@ C:\Users\Jordan\source\repos\Kunshu-Z\SwiftPizza\SwiftPizza\SwiftPizza\obj\Debug
 C:\Users\Jordan\source\repos\Kunshu-Z\SwiftPizza\SwiftPizza\SwiftPizza\obj\Debug\net6.0\SwiftPizza.pdb
 C:\Users\Jordan\source\repos\Kunshu-Z\SwiftPizza\SwiftPizza\SwiftPizza\obj\Debug\net6.0\SwiftPizza.genruntimeconfig.cache
 C:\Users\Jordan\source\repos\Kunshu-Z\SwiftPizza\SwiftPizza\SwiftPizza\obj\Debug\net6.0\ref\SwiftPizza.dll
+C:\Users\Jordan\source\repos\Kunshu-Z\SwiftPizza\SwiftPizza\SwiftPizza\obj\Debug\net6.0\SwiftPizza.MvcApplicationPartsAssemblyInfo.cs
