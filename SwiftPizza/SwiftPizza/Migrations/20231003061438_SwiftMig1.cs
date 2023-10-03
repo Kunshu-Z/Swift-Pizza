@@ -5,7 +5,7 @@
 namespace SwiftPizza.Migrations
 {
     /// <inheritdoc />
-    public partial class SwiftMigration2 : Migration
+    public partial class SwiftMig1 : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

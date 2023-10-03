@@ -1,14 +1,13 @@
 /* _content/SwiftPizza/Views/Shared/_Layout.cshtml.rz.scp.css */
 /* Transparent Navbar */
 .navbar[b-ntlbpz89iu] {
-    background-color: transparent !important;
+    background-color: transparent;
     border: none; /* Remove any borders or box shadows */
 }
 
 /* Navbar Links Style (You can adjust these styles as needed) */
 a.navbar-brand[b-ntlbpz89iu],
 .navbar-nav .nav-link[b-ntlbpz89iu] {
-    background-color: transparent !important;
     color: white;
     /* Add any additional styles you want for the links */
 }

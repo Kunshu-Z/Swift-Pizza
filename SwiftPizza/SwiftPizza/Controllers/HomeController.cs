@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using SwiftPizza.Data;
 using SwiftPizza.Models;
 using System.Diagnostics;
 
@@ -8,9 +9,13 @@ namespace SwiftPizza.Controllers
     {
         private readonly ILogger<HomeController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        private readonly ApplicationDbContext _dbContext;
+
+
+        public HomeController(ILogger<HomeController> logger, ApplicationDbContext dbContext)
         {
             _logger = logger;
+            _dbContext = dbContext;
         }
 
         public IActionResult Index()
@@ -25,16 +30,18 @@ namespace SwiftPizza.Controllers
 
         public IActionResult Pizzas()
         {
-            return View();
+            var pizzas = _dbContext.Pizza.ToList();
+            return View(pizzas);
         }
 
-
-		public IActionResult Login()
+        public IActionResult Login()
 		{
 			return View();
 		}
+        
 
-		[ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+
+        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });

@@ -12,8 +12,8 @@ using SwiftPizza.Data;
 namespace SwiftPizza.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20230927221841_SwiftMigration2")]
-    partial class SwiftMigration2
+    [Migration("20231003061438_SwiftMig1")]
+    partial class SwiftMig1
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -42,10 +42,6 @@ namespace SwiftPizza.Migrations
                     b.Property<DateTime>("Expiry")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<int>("UserID")
                         .HasColumnType("int");
 
@@ -55,7 +51,7 @@ namespace SwiftPizza.Migrations
 
                     b.HasIndex("UserID");
 
-                    b.ToTable("Banks");
+                    b.ToTable("Bank");
                 });
 
             modelBuilder.Entity("SwiftPizza.Models.Cart", b =>
@@ -114,23 +110,32 @@ namespace SwiftPizza.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("UserID"));
 
-                    b.Property<int>("CardNumber")
-                        .HasColumnType("int");
+                    b.Property<string>("Address")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("FirstName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("LastName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Password")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Username")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("Phone")
+                        .HasColumnType("int");
 
                     b.HasKey("UserID");
 
-                    b.HasIndex("CardNumber")
-                        .IsUnique();
-
-                    b.ToTable("Users");
+                    b.ToTable("User", (string)null);
                 });
 
             modelBuilder.Entity("SwiftPizza.Models.Bank", b =>
@@ -161,17 +166,6 @@ namespace SwiftPizza.Migrations
                         .IsRequired();
 
                     b.Navigation("Pizza");
-                });
-
-            modelBuilder.Entity("SwiftPizza.Models.User", b =>
-                {
-                    b.HasOne("SwiftPizza.Models.Bank", "Bank")
-                        .WithOne()
-                        .HasForeignKey("SwiftPizza.Models.User", "CardNumber")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Bank");
                 });
 #pragma warning restore 612, 618
         }

@@ -1,44 +1,25 @@
-﻿@{
-    ViewData["Title"] = "Pizza Menu";
-}
+﻿@model IEnumerable<SwiftPizza.Models.Pizza>
 
-<div class="text-center">
-    <h1>Swift Pizza Catalogue</h1>
-</div>
-
-<!-- Menu Page -->
-<div class="container">
-    <main role="main" class="pb-3">
-        <div class="d-flex">
-            <!-- Dropdown for Pizza 1 -->
-            <div class="dropdown mr-3">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="pizza1Dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Plain Cheese
-                </button>
-                <div class="dropdown-menu" aria-labelledby="pizza1Dropdown">
-                    <!-- Pizza 1 content -->
-                    <div class="pizza-info">
-                        <img src="https://kitchenatics.com/wp-content/uploads/2020/09/Cheese-pizza-1.jpg" alt="Pizza 1">
-                        <p>Description of Pizza 1 goes here.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Add a blank space (div with padding) -->
-            <div style="padding-right: 20px;"></div>
-            <!-- Dropdown for Pizza 2 -->
-            <div class="dropdown mr-3">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="pizza2Dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Pepperoni
-                </button>
-                <div class="dropdown-menu" aria-labelledby="pizza2Dropdown">
-                    <!-- Pizza 2 content -->
-                    <div class="pizza-info">
-                        <img src="https://www.tasteatlas.com/images/dishes/b05a0af72ad845f3a6abe16143d7853a.jpg?mw=1300" alt="Pizza 2">
-                        <p>Description of Pizza 2 goes here.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Add more dropdowns for other pizzas as needed -->
-        </div>
-    </main>
-</div>
+<table class="table" style="color: white;">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var pizza in Model)
+        {
+            <tr>
+                <td>@pizza.PizzaId</td>
+                <td>@pizza.PizzaName</td>
+                <td>@pizza.PizzaPrice</td>
+                <td>@pizza.PizzaQuantity</td>
+                <td>@pizza.PizzaDescription</td>
+            </tr>
+        }
+    </tbody>
+</table>

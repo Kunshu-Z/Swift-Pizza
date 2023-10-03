@@ -1,30 +1,26 @@
 ﻿@page
 @model SwiftPizza.Views.Home.LoginModel
-@using Microsoft.AspNetCore.Mvc.RazorPages
-@using Microsoft.EntityFrameworkCore
-@using System.Threading.Tasks
-@using SwiftPizza.Data
 
-<form method="post" asp-controller="Home" asp-action="Login">
-    @Html.AntiForgeryToken()
-
-    <!--Section for E-mail input-->
+<form method="post">
+    <!-- Email input -->
     <div class="form-group">
-        <label asp-for="Input_Email"></label>
-        <input asp-for="Input_Email" class="form-control" />
-        <span asp-validation-for="Input_Email" class="text-danger"></span>
+        <label for="Email">Email:</label>
+        <input id="Email" name="Email" class="form-control" required />
     </div>
 
-    <!--Section for Password input-->
+    <!-- Password input -->
     <div class="form-group">
-        <label asp-for="Input_Password"></label>
-        <input asp-for="Input_Password" class="form-control" />
-        <span asp-validation-for="Input_Password" class="text-danger"></span>
+        <label for="Password">Password:</label>
+        <input id="Password" name="Password" type="password" class="form-control" required />
     </div>
 
-    <!--Confirmation button-->
+    <!-- Login button -->
     <div class="form-group">
-        <button type="submit" class="btn btn-primary">Confirm</button>
+        <button type="submit" class="btn btn-primary">Login</button>
     </div>
+
+<!-- 
+
+-->
+
 </form>
-
