@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using SwiftPizza.Data;
 using SwiftPizza.Models;
+using SwiftPizza.Views.Home;
 using System.Diagnostics;
 
 namespace SwiftPizza.Controllers
@@ -38,7 +39,16 @@ namespace SwiftPizza.Controllers
 		{
 			return View();
 		}
-        
+
+        public IActionResult Cart(string searchTerm, string sortOrder)
+        {
+            var model = new CartModel(_dbContext);
+            model.LoadPizzas(searchTerm, sortOrder);
+            return View(model);
+        }
+
+
+
 
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

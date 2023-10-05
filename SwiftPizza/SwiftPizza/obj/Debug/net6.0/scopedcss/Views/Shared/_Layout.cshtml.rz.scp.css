@@ -30,18 +30,6 @@ button.accept-policy[b-ntlbpz89iu] {
     line-height: inherit;
 }
 
-
-
-/* Footer (You can adjust these styles as needed) */
-.footer[b-ntlbpz89iu] {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    white-space: nowrap;
-    line-height: 60px;
-    color: white;
-}
-
 /* Style for the Login button */
 .login-button[b-ntlbpz89iu] {
     background-color: #1b6ec2; /* Change the background color */
@@ -53,9 +41,22 @@ button.accept-policy[b-ntlbpz89iu] {
     cursor: pointer; /* Change cursor on hover */
 }
 
-/* Hover effect for the Login button */
-.login-button:hover[b-ntlbpz89iu] {
-    background-color: #1861ac; /* Change background color on hover */
-    /* Add any other hover styles if needed */
+    /* Hover effect for the Login button */
+    .login-button:hover[b-ntlbpz89iu] {
+        background-color: #1861ac; /* Change background color on hover */
+        /* Add any other hover styles if needed */
+    }
+
+/* Sticky Footer Styles */
+body[b-ntlbpz89iu] {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
+
+main[b-ntlbpz89iu] {
+    flex: 1;
+    padding-bottom: 0px; /* equal to the height of the footer */
+}
+
 

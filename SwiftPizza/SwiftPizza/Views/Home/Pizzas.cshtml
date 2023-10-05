@@ -3,22 +3,22 @@
 <table class="table" style="color: white;">
     <thead>
         <tr>
-            <th>ID</th>
             <th>Name</th>
             <th>Price</th>
-            <th>Quantity</th>
             <th>Description</th>
+
         </tr>
     </thead>
     <tbody>
         @foreach (var pizza in Model)
         {
             <tr>
-                <td>@pizza.PizzaId</td>
                 <td>@pizza.PizzaName</td>
                 <td>@pizza.PizzaPrice</td>
-                <td>@pizza.PizzaQuantity</td>
                 <td>@pizza.PizzaDescription</td>
+                <td>
+                    <img src="@pizza.PizzaImage" alt="@pizza.PizzaName" width="100"> <!-- Adjust width as needed -->
+                </td>
             </tr>
         }
     </tbody>

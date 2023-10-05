@@ -1,0 +1,46 @@
+﻿
+@model SwiftPizza.Views.Home.CartModel
+
+<style>
+    .white-table th, .white-table td {
+        color: white !important; /* Use !important to ensure it overrides Bootstrap styles */
+    }
+</style>
+
+@{
+    var isAscSelected = Model.SortOrder == "asc" ? "selected" : "";
+    var isDescSelected = Model.SortOrder == "desc" ? "selected" : "";
+}
+
+<form method="get">
+    <input type="text" name="SearchTerm" placeholder="Search..." value="@Model.SearchTerm" />
+    <select name="SortOrder">
+        <option value="asc" selected="@isAscSelected">Ascending</option>
+        <option value="desc" selected="@isDescSelected">Descending</option>
+    </select>
+    <button type="submit">Filter & Sort</button>
+</form>
+
+<table class="table table-striped white-table">
+    <thead>
+        <tr>
+            <th>Image</th>
+            <th>Name</th>
+            <th>Quantity</th>
+            <th>Price</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var pizza in Model.Pizzas)
+        {
+                <tr>
+                    <td>
+                        <img src="@pizza.PizzaImage" alt="@pizza.PizzaName" width="100" height="100" style="border-radius: 15px;">
+                    </td>
+                    <td>@pizza.PizzaName</td>
+                    <td>@pizza.PizzaQuantity</td>
+                    <td>@pizza.PizzaPrice</td>
+                </tr>
+        }
+    </tbody>
+</table>

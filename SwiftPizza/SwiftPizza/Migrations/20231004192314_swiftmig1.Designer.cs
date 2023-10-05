@@ -12,8 +12,8 @@ using SwiftPizza.Data;
 namespace SwiftPizza.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20231003061438_SwiftMig1")]
-    partial class SwiftMig1
+    [Migration("20231004192314_swiftmig1")]
+    partial class swiftmig1
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -87,6 +87,10 @@ namespace SwiftPizza.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("PizzaImage")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("PizzaName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -99,7 +103,7 @@ namespace SwiftPizza.Migrations
 
                     b.HasKey("PizzaId");
 
-                    b.ToTable("Pizzas");
+                    b.ToTable("Pizza", (string)null);
                 });
 
             modelBuilder.Entity("SwiftPizza.Models.User", b =>

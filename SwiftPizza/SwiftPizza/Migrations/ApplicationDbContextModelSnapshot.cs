@@ -84,6 +84,10 @@ namespace SwiftPizza.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("PizzaImage")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("PizzaName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -96,7 +100,7 @@ namespace SwiftPizza.Migrations
 
                     b.HasKey("PizzaId");
 
-                    b.ToTable("Pizzas");
+                    b.ToTable("Pizza", (string)null);
                 });
 
             modelBuilder.Entity("SwiftPizza.Models.User", b =>

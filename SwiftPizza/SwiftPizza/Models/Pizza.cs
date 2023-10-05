@@ -24,5 +24,7 @@ namespace SwiftPizza.Models
         public int PizzaQuantity { get; set; }
 
         public string PizzaDescription { get; set; }
+
+        public string PizzaImage { get; set; }
     }
 }
