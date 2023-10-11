@@ -10,26 +10,27 @@ namespace SwiftPizza.Models
 {
     public class Bank
     {
-		//Primary Key
-		[Key]
-        public int CardNumber { get; set; } 
+        [Key]
+        public int BankId { get; set; } // Unique identifier for each record
 
-		//Attributes
+        [Required]
+        [StringLength(19, MinimumLength = 12)] // 12 to 19 characters to cover different card lengths
+        public string CardNumber { get; set; }
+
         [Required]
         public DateTime Expiry { get; set; }
 
+        [Required]
+        [Range(100, 999)] // CVV is typically a 3-digit code
         public int CVV { get; set; }
 
-		//Foreign Key (UserID)
-		[ForeignKey("User")]
-		public int UserID { get; set; }
-		//Navigation property
-		public User User { get; set; }
+        [ForeignKey("User")]
+        public int UserId { get; set; }
+        public virtual User User { get; set; }
 
-		//Foreign Key (CartID)
-		[ForeignKey("Cart")]
-		public int CartID { get; set; }
-		//Navigation property
-		public Cart Cart { get; set; }
-	}
+        [ForeignKey("Cart")]
+        public int CartId { get; set; }
+        public virtual Cart Cart { get; set; }
+    }
+
 }

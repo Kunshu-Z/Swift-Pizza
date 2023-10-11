@@ -12,8 +12,8 @@ using SwiftPizza.Data;
 namespace SwiftPizza.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20231004192314_swiftmig1")]
-    partial class swiftmig1
+    [Migration("20231011031143_UpdateBank")]
+    partial class UpdateBank
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -27,29 +27,34 @@ namespace SwiftPizza.Migrations
 
             modelBuilder.Entity("SwiftPizza.Models.Bank", b =>
                 {
-                    b.Property<int>("CardNumber")
+                    b.Property<int>("BankId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CardNumber"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("BankId"));
 
                     b.Property<int>("CVV")
                         .HasColumnType("int");
 
-                    b.Property<int>("CartID")
+                    b.Property<string>("CardNumber")
+                        .IsRequired()
+                        .HasMaxLength(19)
+                        .HasColumnType("nvarchar(19)");
+
+                    b.Property<int>("CartId")
                         .HasColumnType("int");
 
                     b.Property<DateTime>("Expiry")
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("UserID")
+                    b.Property<int>("UserId")
                         .HasColumnType("int");
 
-                    b.HasKey("CardNumber");
+                    b.HasKey("BankId");
 
-                    b.HasIndex("CartID");
+                    b.HasIndex("CartId");
 
-                    b.HasIndex("UserID");
+                    b.HasIndex("UserId");
 
                     b.ToTable("Bank");
                 });
@@ -146,13 +151,13 @@ namespace SwiftPizza.Migrations
                 {
                     b.HasOne("SwiftPizza.Models.Cart", "Cart")
                         .WithMany()
-                        .HasForeignKey("CartID")
+                        .HasForeignKey("CartId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("SwiftPizza.Models.User", "User")
                         .WithMany()
-                        .HasForeignKey("UserID")
+                        .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 

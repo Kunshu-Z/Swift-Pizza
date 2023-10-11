@@ -18,22 +18,9 @@
     }
 </style>
 
-@{
-    var isAscSelected = Model.SortOrder == "asc" ? "selected" : "";
-    var isDescSelected = Model.SortOrder == "desc" ? "selected" : "";
-}
-
-
 <div class="container">
+    <!-- Left section for Menu -->
     <div class="section">
-        <form method="get">
-            <input type="text" name="SearchTerm" placeholder="Search..." value="@Model.SearchTerm" />
-            <select name="SortOrder">
-                <option value="asc" selected="@isAscSelected">Ascending</option>
-                <option value="desc" selected="@isDescSelected">Descending</option>
-            </select>
-            <button type="submit">Filter & Sort</button>
-        </form>
         <h2>Menu</h2>
         @foreach (var pizza in Model.Pizzas)
         {
@@ -54,6 +41,16 @@
         <div>
             Total: $<span id="totalPrice">0</span>
         </div>
+        <button id="proceedToPaymentBtn" style="display: none;" onclick="togglePaymentSection()">Proceed to Payment</button>
+
+        <div id="paymentSection" style="display: none;">
+            <!-- Add your payment fields and controls here -->
+            <h3>Payment Details:</h3>
+            Card Number: <input type="text" id="cardNumber"><br>
+            Expiry: <input type="text" id="expiry"><br>
+            CVV: <input type="text" id="cvv"><br>
+            <button onclick="makePayment()">Pay Now</button>
+        </div>
     </div>
 </div>
 
@@ -73,6 +70,13 @@
 
         cartItemsDiv.innerHTML = itemsHtml;
         document.getElementById('totalPrice').innerText = totalPrice;
+
+        const proceedToPaymentBtn = document.getElementById('proceedToPaymentBtn');
+        if (totalPrice > 0) {
+            proceedToPaymentBtn.style.display = 'block';
+        } else {
+            proceedToPaymentBtn.style.display = 'none';
+        }
     }
 
     function addPizzaToCart(pizzaId, pizzaName, pizzaPrice) {
@@ -94,5 +98,19 @@
 
             updateCartDisplay();
         }
+    }
+
+    function togglePaymentSection() {
+        const paymentSection = document.getElementById('paymentSection');
+        if (paymentSection.style.display === 'none') {
+            paymentSection.style.display = 'block';
+        } else {
+            paymentSection.style.display = 'none';
+        }
+    }
+
+    function makePayment() {
+        // Add your payment processing logic here.
+        alert('Payment made!'); // Just a placeholder for now.
     }
 </script>
