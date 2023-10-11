@@ -9,20 +9,40 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/SwiftPizza.styles.css" asp-append-version="true" />
-</head>
-<body id="page-body" style="background-image: url('https://i.imgur.com/5RkR7uh.png');
-            background-size: 1900px 960px;
+    <style>
+        body {
+            background-image: url('https://i.imgur.com/5RkR7uh.png');
+            background-size: cover;
             background-repeat: no-repeat;
             background-attachment: fixed;
             margin: 0;
             padding: 0;
-            color: white;">
+            color: white;
+        }
+
+        .navbar-bg {
+            background-color: red;
+        }
+
+        .navbar-light .navbar-nav .nav-link {
+            color: white;
+            border: 1px solid white;
+            margin: 0 5px;
+        }
+
+        .navbar-light .navbar-brand {
+            color: white;
+        }
+
+    </style>
+</head>
+<body id="page-body">
 
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light navbar-bg border-bottom box-shadow mb-3">
             <div class="container-fluid">
-                <!-- Add the image and brand text -->
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index" style="color: white;">
+                <!-- Add the image and brand text on the left -->
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
                     <img src="https://i.imgur.com/20hpKwF.pngg" alt="SwiftPizza Logo" width="70" height="80">
                     SwiftPizza
                 </a>
@@ -34,44 +54,42 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index" style="color: white;">Home</a>
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Pizzas" style="color: white;">Pizza</a>
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Pizzas">Pizza</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Cart" style="color: white;">Cart</a>
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Cart">Cart</a>
                         </li>
                     </ul>
-                    <!-- Clickable image that triggers dropdown -->
+                    <!-- Login section on the right -->
                     @if (Context.Session.GetString("FirstName") != null)
                     {
-                            <div class="navbar-text">
-                                Welcome, @Context.Session.GetString("FirstName")!
-                            </div>
-                            <a class="navbar-link" asp-area="" asp-controller="Home" asp-action="Logout" style="color: white;">Sign out</a>
+                        <div class="navbar-text">
+                            Welcome, @Context.Session.GetString("FirstName")!
+                        </div>
+                        <a class="navbar-link" asp-area="" asp-controller="Home" asp-action="Logout">Sign out</a>
                     }
                     else
                     {
-                            <div class="dropdown">
-                                <!-- Trigger/image button -->
-                                <img src="https://www.computerhope.com/jargon/g/guest-user.png" id="loginImageDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" width="70" height="80">
-                                <!-- Dropdown Menu -->
-                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="loginImageDropdown">
-                                    <a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="Login" style="color: black;">Sign in</a>
-                                </div>
+                        <div class="dropdown">
+                            <!-- Trigger/image button -->
+                            <img src="https://www.computerhope.com/jargon/g/guest-user.png" id="loginImageDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" width="70" height="80">
+                            <!-- Dropdown Menu -->
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="loginImageDropdown">
+                                <a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="Login" style="color: black;">Sign in</a>
                             </div>
+                        </div>
                     }
                 </div>
             </div>
         </nav>
     </header>
 
-    <div class="container-fluid">
-        <main role="main" class="pb-3" style="padding-bottom: 60px;"> <!-- added padding to prevent content overlap with footer -->
-            @RenderBody()
-        </main>
-    </div>
+    <main role="main" class="pb-3">
+        @RenderBody()
+    </main>
 
     <!-- Ensure jQuery and Bootstrap JS are included -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
