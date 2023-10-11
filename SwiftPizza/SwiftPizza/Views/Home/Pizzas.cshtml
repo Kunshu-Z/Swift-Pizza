@@ -1,12 +1,25 @@
 ﻿@model IEnumerable<SwiftPizza.Models.Pizza>
 
-<table class="table" style="color: white;">
+<style>
+    .custom-table {
+        border-collapse: collapse;
+        border: 2px solid white;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+
+        .custom-table th, .custom-table td {
+            border: 1px solid white;
+            padding: 10px;
+        }
+</style>
+
+<table class="table custom-table" style="color: white;">
     <thead>
         <tr>
             <th>Name</th>
             <th>Price</th>
             <th>Description</th>
-            <th>Image</th> 
+            <th>Image</th>
         </tr>
     </thead>
     <tbody>
@@ -14,7 +27,7 @@
         {
             <tr>
                 <td>@pizza.PizzaName</td>
-                <td>$@pizza.PizzaPrice</td> 
+                <td>$@pizza.PizzaPrice</td>
                 <td>@pizza.PizzaDescription</td>
                 <td>
                     <img src="@pizza.PizzaImage" alt="@pizza.PizzaName" width="100">
