@@ -28,20 +28,36 @@ namespace SwiftPizza.Views.Home
 
         public async Task<IActionResult> OnPostAsync()
         {
-            var user = await _dbContext.Users.SingleOrDefaultAsync(u => u.Email == Email && u.Password == Password);
-
-            // Check if user is found and credentials are correct
-            if (user != null)
+            if (string.IsNullOrEmpty(Email) || string.IsNullOrEmpty(Password))
             {
-                HttpContext.Session.SetString("FirstName", user.FirstName);
-                return RedirectToPage("/Index");
+                ViewData["ErrorMessage"] = "Email and password are required.";
+                return Page();
             }
-            // If user is not found or credentials are incorrect, set error message
-            else
+
+            try
             {
-                ViewData["ErrorMessage"] = "Invalid email or password.";
+                var user = await _dbContext.Users.SingleOrDefaultAsync(u => u.Email == Email && u.Password == Password);
+
+                // Check if user is found and credentials are correct
+                if (user != null)
+                {
+                    HttpContext.Session.SetString("FirstName", user.FirstName);
+                    return RedirectToPage("/Index");
+                }
+                // If user is not found or credentials are incorrect, set error message
+                else
+                {
+                    ViewData["ErrorMessage"] = "Invalid email or password.";
+                    return Page();
+                }
+            }
+            catch (Exception e)
+            {
+                // Log the exception (ideally using a logging framework)
+                ViewData["ErrorMessage"] = "An error occurred while processing your request.";
                 return Page();
             }
         }
+
     }
 }

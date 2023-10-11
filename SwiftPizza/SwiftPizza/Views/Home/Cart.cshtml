@@ -23,9 +23,20 @@
 
 
 <div class="container">
-    <!-- Left section for Menu -->
     <div class="section">
         <h2>Menu</h2>
+
+        <!-- Search & Sort Form -->
+        <form method="post" onsubmit="return validateSearchAndSort()">
+            <input type="text" name="SearchTerm" placeholder="Search for pizza..." value="@Model.SearchTerm">
+            <select name="SortOrder">
+                <option value="default" selected="@(Model.SortOrder == "default" ? "selected" : null)">Default</option>
+                <option value="asc" selected="@(Model.SortOrder == "asc" ? "selected" : null)">Name (A-Z)</option>
+                <option value="desc" selected="@(Model.SortOrder == "desc" ? "selected" : null)">Name (Z-A)</option>
+            </select>
+            <button type="submit">Search & Sort</button>
+        </form>
+
         @foreach (var pizza in Model.Pizzas)
         {
             <div>
@@ -37,6 +48,7 @@
             </div>
         }
     </div>
+
 
     <!-- Right section for Cart -->
     <div class="section">
@@ -58,8 +70,25 @@
     </div>
 </div>
 
+
 <script>
     let cart = {};
+
+    function saveCartToLocalStorage() {
+        localStorage.setItem('cart', JSON.stringify(cart));
+    }
+
+    function loadCartFromLocalStorage() {
+        const savedCart = localStorage.getItem('cart');
+        if (savedCart) {
+            cart = JSON.parse(savedCart);
+            updateCartDisplay();
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+        loadCartFromLocalStorage();
+    });
 
     function updateCartDisplay() {
         const cartItemsDiv = document.getElementById('cartItems');
@@ -90,6 +119,7 @@
 
         cart[pizzaId].quantity++;
         updateCartDisplay();
+        saveCartToLocalStorage();
     }
 
     function removePizzaFromCart(pizzaId) {
@@ -101,6 +131,7 @@
             }
 
             updateCartDisplay();
+            saveCartToLocalStorage();
         }
     }
 
@@ -113,8 +144,59 @@
         }
     }
 
-    function makePayment() {
-        // Add your payment processing logic here.
-        alert('Payment made!'); // Just a placeholder for now.
+    function validatePaymentDetails() {
+        const cardNumber = document.getElementById('cardNumber').value;
+        const expiry = document.getElementById('expiry').value;
+        const cvv = document.getElementById('cvv').value;
+
+        if (!/^\d{16}$/.test(cardNumber)) {
+            return "Invalid Card Number. It should be 16 digits.";
+        }
+
+        if (!/^(0[1-9]|1[0-2])\/\d{2}$/.test(expiry)) {
+            return "Invalid Expiry Date. It should be in MM/YY format.";
+        }
+
+        if (!/^\d{3}$/.test(cvv)) {
+            return "Invalid CVV. It should be 3 numeric characters.";
+        }
+
+        return null; // No validation errors
     }
+
+
+    function makePayment() {
+        const cardNumber = document.getElementById('cardNumber').value;
+        const expiry = document.getElementById('expiry').value;
+        const cvv = document.getElementById('cvv').value;
+
+        const validationError = validatePaymentDetails(cardNumber, expiry, cvv);
+
+        if (validationError) {
+            alert(validationError); // Display the error message
+            return;
+        }
+
+        // If no errors, proceed with the payment
+        alert('Payment made!');
+    }
+
+    function containsSpecialCharacters(str) {
+        var pattern = /[!@@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/;
+        return pattern.test(str);
+    }
+
+    function validateSearchAndSort() {
+        const searchTerm = document.querySelector('input[name="SearchTerm"]').value;
+
+        if (containsSpecialCharacters(searchTerm)) {
+            alert('Please avoid using special characters in the search term.');
+            return false;
+        }
+
+        saveCartToLocalStorage();
+
+        return true;
+    }
+
 </script>
