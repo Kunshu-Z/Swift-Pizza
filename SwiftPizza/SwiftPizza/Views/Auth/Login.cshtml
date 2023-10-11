@@ -1,11 +1,15 @@
-﻿@page
-@model SwiftPizza.Views.Home.LoginModel
-
-<style>
+﻿<style>
 
 </style>
 
-<form method="post">
+@if (!string.IsNullOrEmpty(ViewData["ErrorMessage"] as string))
+{
+    <div class="alert alert-danger">
+        @ViewData["ErrorMessage"]
+    </div>
+}
+
+<form method="post" action="@Url.Action("Login", "Auth")">
     <!-- Email input -->
     <div class="form-group">
         <label for="Email">Email:</label>
@@ -22,9 +26,5 @@
     <div class="form-group">
         <button type="submit" class="btn btn-primary">Login</button>
     </div>
-
-<!-- 
-
--->
-
 </form>
+
