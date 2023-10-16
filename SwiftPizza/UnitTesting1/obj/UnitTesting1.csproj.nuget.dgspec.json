@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Jordan\\source\\repos\\SwiftPizzaRevise\\SwiftPizza\\UnitTesting1\\UnitTesting1.csproj": {}
+    "C:\\Users\\Jack\\Source\\Repos\\Swift-PizzaupdatedFinal\\SwiftPizza\\UnitTesting1\\UnitTesting1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Jordan\\source\\repos\\SwiftPizzaRevise\\SwiftPizza\\SwiftPizza\\SwiftPizza.csproj": {
+    "C:\\Users\\Jack\\Source\\Repos\\Swift-PizzaupdatedFinal\\SwiftPizza\\SwiftPizza\\SwiftPizza.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jordan\\source\\repos\\SwiftPizzaRevise\\SwiftPizza\\SwiftPizza\\SwiftPizza.csproj",
+        "projectUniqueName": "C:\\Users\\Jack\\Source\\Repos\\Swift-PizzaupdatedFinal\\SwiftPizza\\SwiftPizza\\SwiftPizza.csproj",
         "projectName": "SwiftPizza",
-        "projectPath": "C:\\Users\\Jordan\\source\\repos\\SwiftPizzaRevise\\SwiftPizza\\SwiftPizza\\SwiftPizza.csproj",
-        "packagesPath": "C:\\Users\\Jordan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jordan\\source\\repos\\SwiftPizzaRevise\\SwiftPizza\\SwiftPizza\\obj\\",
+        "projectPath": "C:\\Users\\Jack\\Source\\Repos\\Swift-PizzaupdatedFinal\\SwiftPizza\\SwiftPizza\\SwiftPizza.csproj",
+        "packagesPath": "C:\\Users\\Jack\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Jack\\Source\\Repos\\Swift-PizzaupdatedFinal\\SwiftPizza\\SwiftPizza\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Jordan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Jack\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,6 +22,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\sdk\\7.0.306\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -73,6 +74,18 @@
             "Moq": {
               "target": "Package",
               "version": "[4.20.69, )"
+            },
+            "Selenium.Support": {
+              "target": "Package",
+              "version": "[4.14.1, )"
+            },
+            "Selenium.WebDriver": {
+              "target": "Package",
+              "version": "[4.14.1, )"
+            },
+            "Selenium.WebDriver.ChromeDriver": {
+              "target": "Package",
+              "version": "[118.0.5993.7000, )"
             }
           },
           "imports": [
@@ -94,21 +107,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Jordan\\source\\repos\\SwiftPizzaRevise\\SwiftPizza\\UnitTesting1\\UnitTesting1.csproj": {
+    "C:\\Users\\Jack\\Source\\Repos\\Swift-PizzaupdatedFinal\\SwiftPizza\\UnitTesting1\\UnitTesting1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jordan\\source\\repos\\SwiftPizzaRevise\\SwiftPizza\\UnitTesting1\\UnitTesting1.csproj",
+        "projectUniqueName": "C:\\Users\\Jack\\Source\\Repos\\Swift-PizzaupdatedFinal\\SwiftPizza\\UnitTesting1\\UnitTesting1.csproj",
         "projectName": "UnitTesting1",
-        "projectPath": "C:\\Users\\Jordan\\source\\repos\\SwiftPizzaRevise\\SwiftPizza\\UnitTesting1\\UnitTesting1.csproj",
-        "packagesPath": "C:\\Users\\Jordan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jordan\\source\\repos\\SwiftPizzaRevise\\SwiftPizza\\UnitTesting1\\obj\\",
+        "projectPath": "C:\\Users\\Jack\\Source\\Repos\\Swift-PizzaupdatedFinal\\SwiftPizza\\UnitTesting1\\UnitTesting1.csproj",
+        "packagesPath": "C:\\Users\\Jack\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Jack\\Source\\Repos\\Swift-PizzaupdatedFinal\\SwiftPizza\\UnitTesting1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Jordan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Jack\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -122,8 +135,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Jordan\\source\\repos\\SwiftPizzaRevise\\SwiftPizza\\SwiftPizza\\SwiftPizza.csproj": {
-                "projectPath": "C:\\Users\\Jordan\\source\\repos\\SwiftPizzaRevise\\SwiftPizza\\SwiftPizza\\SwiftPizza.csproj"
+              "C:\\Users\\Jack\\Source\\Repos\\Swift-PizzaupdatedFinal\\SwiftPizza\\SwiftPizza\\SwiftPizza.csproj": {
+                "projectPath": "C:\\Users\\Jack\\Source\\Repos\\Swift-PizzaupdatedFinal\\SwiftPizza\\SwiftPizza\\SwiftPizza.csproj"
               }
             }
           }
@@ -154,6 +167,18 @@
               "target": "Package",
               "version": "[17.3.2, )"
             },
+            "Selenium.Support": {
+              "target": "Package",
+              "version": "[4.14.1, )"
+            },
+            "Selenium.WebDriver": {
+              "target": "Package",
+              "version": "[4.14.1, )"
+            },
+            "Selenium.WebDriver.ChromeDriver": {
+              "target": "Package",
+              "version": "[118.0.5993.7000, )"
+            },
             "coverlet.collector": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
@@ -177,7 +202,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
         }
       }
     }
