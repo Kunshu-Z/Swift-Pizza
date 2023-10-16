@@ -1,6 +1,4 @@
-﻿@inject SwiftPizza.Data.ApplicationDbContext _dbContext
-
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -10,6 +8,7 @@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/SwiftPizza.styles.css" asp-append-version="true" />
     <style>
+        /* Background styles for the body */
         body {
             background-image: url('https://r4.wallpaperflare.com/wallpaper/9/310/369/pizza-food-vegetables-onion-wallpaper-38566dc820801c38801c113e3872141a.jpg');
             background-size: cover;
@@ -20,6 +19,7 @@
             color: white;
         }
 
+        /* Navbar styles */
         .navbar-bg {
             background-color: #8B0000;
         }
@@ -34,6 +34,13 @@
             color: white;
         }
 
+        /* Styles for the pizza header in the navbar */
+        .navbar-light .navbar-nav .nav-link.pizza-header {
+            /* Apply the same styles as other headings */
+            color: white;
+            border: 1px solid white;
+            margin: 0 5px;
+        }
     </style>
 </head>
 <body id="page-body">
@@ -41,39 +48,41 @@
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light navbar-bg border-bottom box-shadow mb-3">
             <div class="container-fluid">
-                <!-- Add the image and brand text on the left -->
+                <!-- Brand and logo in the navbar -->
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
                     <img src="https://i.imgur.com/Sf4gR6y.png" alt="SwiftPizza Logo" width="70" height="80">
                     SwiftPizza
                 </a>
-                <!-- Rest of your navigation menu -->
+                <!-- Navigation links and mobile menu toggle button -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
+                        <!-- Navigation links -->
                         <li class="nav-item">
                             <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Pizzas">Pizza</a>
+                            <a class="nav-link pizza-header" asp-area="" asp-controller="Home" asp-action="Pizzas">Pizza</a>
+                            <!-- Apply the pizza header style here -->
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Cart">Cart</a>
                         </li>
                     </ul>
+                    <!-- Display user's name if logged in, or login option -->
                     <div class="navbar-text" style="color:white">
                         @if (Context.Session.GetString("FirstName") != null)
                         {
                             <span>Welcome, @Context.Session.GetString("FirstName")!</span>
                         }
                     </div>
-
+                    <!-- User profile dropdown -->
                     <div class="dropdown">
                         <!-- Trigger/image button -->
                         <img src="https://www.computerhope.com/jargon/g/guest-user.png" id="loginImageDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" width="70" height="80">
-
                         <!-- Dropdown Menu -->
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="loginImageDropdown">
                             @if (Context.Session.GetString("FirstName") != null)
@@ -86,8 +95,6 @@
                             }
                         </div>
                     </div>
-
-
                 </div>
             </div>
         </nav>
