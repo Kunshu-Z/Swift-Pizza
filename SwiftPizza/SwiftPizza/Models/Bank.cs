@@ -31,6 +31,17 @@ namespace SwiftPizza.Models
         [ForeignKey("Cart")]
         public int CartId { get; set; }
         public virtual Cart Cart { get; set; }
+
+        public bool IsValidPaymentInformation()
+        {
+            // Sample validation logic (you'd likely have more comprehensive checks in a real-world application)
+            return !string.IsNullOrWhiteSpace(CardNumber)
+                   && CardNumber.Length == 16
+                   && Expiry > DateTime.Now
+                   && CVV > 99 && CVV < 1000;
+        }
+
+
     }
 
 }

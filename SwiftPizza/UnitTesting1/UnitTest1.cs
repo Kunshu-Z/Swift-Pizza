@@ -14,6 +14,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using UnitTesting1.Helpers;
 
+
 namespace UnitTestSP
 {
     [TestClass]
@@ -38,7 +39,7 @@ namespace UnitTestSP
             };
 
             var mockDbSet = new Mock<DbSet<User>>();
-            mockDbSet.Setup(m => m.FindAsync(user.Email)).Returns(Task.FromResult(user));
+            mockDbSet.Setup(m => m.FindAsync(user.Email)).Returns(new ValueTask<User>(Task.FromResult(user)));
 
             dbContextMock.Setup(m => m.Users).Returns(mockDbSet.Object);
 
@@ -71,7 +72,7 @@ namespace UnitTestSP
             };
 
             var mockDbSet = new Mock<DbSet<User>>();
-            mockDbSet.Setup(m => m.FindAsync(user.Email)).Returns(Task.FromResult(user));
+            mockDbSet.Setup(m => m.FindAsync(user.Email)).Returns(new ValueTask<User>(Task.FromResult(user)));
 
             dbContextMock.Setup(m => m.Users).Returns(mockDbSet.Object);
 
@@ -106,7 +107,7 @@ namespace UnitTestSP
             };
 
             var mockDbSet = new Mock<DbSet<User>>();
-            mockDbSet.Setup(m => m.FindAsync(user.Email)).Returns(Task.FromResult(user));
+            mockDbSet.Setup(m => m.FindAsync(user.Email)).Returns(new ValueTask<User>(Task.FromResult(user)));
 
             dbContextMock.Setup(m => m.Users).Returns(mockDbSet.Object);
 
@@ -140,7 +141,7 @@ namespace UnitTestSP
             };
 
             var mockDbSet = new Mock<DbSet<User>>();
-            mockDbSet.Setup(m => m.FindAsync(user.Email)).Returns(Task.FromResult(user));
+            mockDbSet.Setup(m => m.FindAsync(user.Email)).Returns(new ValueTask<User>(Task.FromResult(user)));
 
             dbContextMock.Setup(m => m.Users).Returns(mockDbSet.Object);
 
@@ -291,12 +292,14 @@ namespace UnitTestSP
         public void T4_1_AddingItemsToCart()
         {
             // Arrange
-            var cart = new Cart();
+            var cart = new PizzaCartTest();
             var initialPizzaPrice = cart.Price;
-            var itemPizzaPrice = 10.99; // PizzaPrice of the item being added
+            int pizzaId = 1;
+            string pizzaName = "Pepperoni";
+            int itemPizzaPrice = 11; // Since the price is an integer
 
             // Act
-            cart.AddToCart(itemPizzaPrice);
+            cart.AddToCart(pizzaId, pizzaName, itemPizzaPrice);
 
             // Assert
             // In this scenario, an item is added to the cart.
@@ -308,16 +311,19 @@ namespace UnitTestSP
         public void T4_2_ModifyingCartContents_Add()
         {
             // Arrange
-            var cart = new Cart();
+            var cart = new PizzaCartTest();
             var initialPizzaPrice = cart.Price;
-            var itemPizzaPrice = 9.99; // PizzaPrice of the item being added
+            int pizzaId = 2;
+            string pizzaName = "Margarita";
+            int itemPizzaPrice = 10; // Adjusted to integer
 
             // Act
-            cart.AddToCart(itemPizzaPrice);
+            cart.AddToCart(pizzaId, pizzaName, itemPizzaPrice);
+            cart.AddToCart(pizzaId, pizzaName, itemPizzaPrice); // Adding the same pizza again
             var updatedPizzaPrice = cart.Price;
 
             // Assert
-            // In this scenario, an item is added, and its PizzaQuantity increases.
+            // In this scenario, the same item is added twice, and its quantity increases.
             Assert.AreNotEqual(initialPizzaPrice, updatedPizzaPrice);
             Assert.AreEqual(itemPizzaPrice * 2, updatedPizzaPrice);
         }
@@ -326,13 +332,15 @@ namespace UnitTestSP
         public void T4_3_ModifyingCartContents_Remove()
         {
             // Arrange
-            var cart = new Cart();
-            var itemPizzaPrice = 11.99; // PizzaPrice of the item being added
+            var cart = new PizzaCartTest();
+            int pizzaId = 3;
+            string pizzaName = "Hawaiian";
+            int itemPizzaPrice = 12; // Adjusted to integer
 
             // Act
-            cart.AddToCart(itemPizzaPrice);
+            cart.AddToCart(pizzaId, pizzaName, itemPizzaPrice);
             var initialPizzaPrice = cart.Price;
-            cart.RemoveFromCart(itemPizzaPrice);
+            cart.RemoveFromCart(pizzaId);
             var updatedPizzaPrice = cart.Price;
 
             // Assert
@@ -341,16 +349,18 @@ namespace UnitTestSP
             Assert.AreEqual(0, updatedPizzaPrice);
         }
 
+
         [TestMethod]
         public void T4_4_ModifyingEmptyCart()
         {
             // Arrange
-            var cart = new Cart();
+            var cart = new PizzaCartTest();
             var initialPizzaPrice = cart.Price;
 
             // Act
             cart.RemoveFromCart(0); // Attempt to remove an item from an empty cart
-            cart.AddToCart(0); // Attempt to add an item to an empty cart
+            cart.AddToCart(0, "Sample Pizza", 9);
+            // Attempt to add an item to an empty cart
 
             // Assert
             // In this scenario, an attempt is made to modify an empty cart.
@@ -605,11 +615,12 @@ namespace UnitTestSP
             }
 
             // Recalculate the total cost
-            var totalCost = model.Pizzas.Sum(p => p.PizzaPrice * cartItem.PizzaQuantity);
+            var totalCost = model.Pizzas.Sum(p => p.PizzaPrice * p.PizzaQuantity); // Here's the change
 
             // Assert
             Assert.AreEqual(30, totalCost); // Total cost should reflect the manually modified quantities
         }
+
 
         private ApplicationDbContext CreateInMemoryDbContext()
         {
