@@ -1,0 +1,6 @@
+C:\Users\Jordan\source\repos\SwiftPizzaRevise\SwiftPizza\UnitTesting1\bin\Debug\net6.0\CoverletSourceRootsMapping
+C:\Users\Jordan\source\repos\SwiftPizzaRevise\SwiftPizza\UnitTesting1\obj\Debug\net6.0\UnitTesting1.csproj.AssemblyReference.cache
+C:\Users\Jordan\source\repos\SwiftPizzaRevise\SwiftPizza\UnitTesting1\obj\Debug\net6.0\UnitTesting1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Jordan\source\repos\SwiftPizzaRevise\SwiftPizza\UnitTesting1\obj\Debug\net6.0\UnitTesting1.AssemblyInfoInputs.cache
+C:\Users\Jordan\source\repos\SwiftPizzaRevise\SwiftPizza\UnitTesting1\obj\Debug\net6.0\UnitTesting1.AssemblyInfo.cs
+C:\Users\Jordan\source\repos\SwiftPizzaRevise\SwiftPizza\UnitTesting1\obj\Debug\net6.0\UnitTesting1.csproj.CoreCompileInputs.cache

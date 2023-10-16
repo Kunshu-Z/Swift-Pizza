@@ -20,6 +20,8 @@ namespace SwiftPizza.Views.Home
             _dbContext = dbContext;
         }
 
+        public virtual HttpContext CurrentHttpContext => HttpContext;
+
         public void OnGet()
         {
             ViewData["ErrorMessage"] = string.Empty;

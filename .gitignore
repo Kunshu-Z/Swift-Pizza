@@ -1,0 +1,6 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/SwiftPizza/SwiftPizza/obj/Debug/net6.0/SwiftPizza.assets.cache
+/SwiftPizza/SwiftPizza/obj/Debug/net6.0/SwiftPizza.GeneratedMSBuildEditorConfig.editorconfig
