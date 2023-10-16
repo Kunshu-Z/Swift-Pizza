@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\parth\\Source\\Repos\\Swift-Pizza2\\SwiftPizza\\UnitTesting1\\UnitTesting1.csproj": {}
+    "C:\\Users\\HP\\Source\\Repos\\Swift-PizzaUdated\\SwiftPizza\\UnitTesting1\\UnitTesting1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\parth\\Source\\Repos\\Swift-Pizza2\\SwiftPizza\\SwiftPizza\\SwiftPizza.csproj": {
+    "C:\\Users\\HP\\Source\\Repos\\Swift-PizzaUdated\\SwiftPizza\\SwiftPizza\\SwiftPizza.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\parth\\Source\\Repos\\Swift-Pizza2\\SwiftPizza\\SwiftPizza\\SwiftPizza.csproj",
+        "projectUniqueName": "C:\\Users\\HP\\Source\\Repos\\Swift-PizzaUdated\\SwiftPizza\\SwiftPizza\\SwiftPizza.csproj",
         "projectName": "SwiftPizza",
-        "projectPath": "C:\\Users\\parth\\Source\\Repos\\Swift-Pizza2\\SwiftPizza\\SwiftPizza\\SwiftPizza.csproj",
-        "packagesPath": "C:\\Users\\parth\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\parth\\Source\\Repos\\Swift-Pizza2\\SwiftPizza\\SwiftPizza\\obj\\",
+        "projectPath": "C:\\Users\\HP\\Source\\Repos\\Swift-PizzaUdated\\SwiftPizza\\SwiftPizza\\SwiftPizza.csproj",
+        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\HP\\Source\\Repos\\Swift-PizzaUdated\\SwiftPizza\\SwiftPizza\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\parth\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -110,24 +110,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400-preview.23330.10\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\parth\\Source\\Repos\\Swift-Pizza2\\SwiftPizza\\UnitTesting1\\UnitTesting1.csproj": {
+    "C:\\Users\\HP\\Source\\Repos\\Swift-PizzaUdated\\SwiftPizza\\UnitTesting1\\UnitTesting1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\parth\\Source\\Repos\\Swift-Pizza2\\SwiftPizza\\UnitTesting1\\UnitTesting1.csproj",
+        "projectUniqueName": "C:\\Users\\HP\\Source\\Repos\\Swift-PizzaUdated\\SwiftPizza\\UnitTesting1\\UnitTesting1.csproj",
         "projectName": "UnitTesting1",
-        "projectPath": "C:\\Users\\parth\\Source\\Repos\\Swift-Pizza2\\SwiftPizza\\UnitTesting1\\UnitTesting1.csproj",
-        "packagesPath": "C:\\Users\\parth\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\parth\\Source\\Repos\\Swift-Pizza2\\SwiftPizza\\UnitTesting1\\obj\\",
+        "projectPath": "C:\\Users\\HP\\Source\\Repos\\Swift-PizzaUdated\\SwiftPizza\\UnitTesting1\\UnitTesting1.csproj",
+        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\HP\\Source\\Repos\\Swift-PizzaUdated\\SwiftPizza\\UnitTesting1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\parth\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -142,8 +142,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\parth\\Source\\Repos\\Swift-Pizza2\\SwiftPizza\\SwiftPizza\\SwiftPizza.csproj": {
-                "projectPath": "C:\\Users\\parth\\Source\\Repos\\Swift-Pizza2\\SwiftPizza\\SwiftPizza\\SwiftPizza.csproj"
+              "C:\\Users\\HP\\Source\\Repos\\Swift-PizzaUdated\\SwiftPizza\\SwiftPizza\\SwiftPizza.csproj": {
+                "projectPath": "C:\\Users\\HP\\Source\\Repos\\Swift-PizzaUdated\\SwiftPizza\\SwiftPizza\\SwiftPizza.csproj"
               }
             }
           }
@@ -209,7 +209,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400-preview.23330.10\\RuntimeIdentifierGraph.json"
         }
       }
     }
