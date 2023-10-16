@@ -41,7 +41,15 @@ namespace SwiftPizza.Models
                    && CVV > 99 && CVV < 1000;
         }
 
-
+        public bool SimulatePaymentFailure()
+        {
+            // Simulate a payment failure condition
+            if (CardNumber.StartsWith("4") || CardNumber.Length != 16 || CVV <= 0 || Expiry <= DateTime.Now)
+            {
+                return true;
+            }
+            return false;
+        }
     }
 
 }

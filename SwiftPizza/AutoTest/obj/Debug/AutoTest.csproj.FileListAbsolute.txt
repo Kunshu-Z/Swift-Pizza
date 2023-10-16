@@ -1,0 +1,2 @@
+C:\Users\HP\Source\Repos\Swift-PizzaUpdated\SwiftPizza\AutoTest\obj\Debug\AutoTest.csproj.AssemblyReference.cache
+C:\Users\HP\Source\Repos\Swift-PizzaUpdated\SwiftPizza\AutoTest\obj\Debug\AutoTest.csproj.CoreCompileInputs.cache

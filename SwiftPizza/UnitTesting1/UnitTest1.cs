@@ -376,15 +376,20 @@ namespace UnitTestSP
         [TestMethod]
         public void LoadPizzas_SortingAscending_Success()
         {
-            // Arrange
+            /// Arrange
             var dbContext = new Mock<ApplicationDbContext>();
             var pizzas = new List<Pizza>
-    {
-        new Pizza { PizzaName = "Pepperoni Pizza" },
-        new Pizza { PizzaName = "Margarita Pizza" },
-    }.AsQueryable();
+{
+    new Pizza { PizzaName = "Pepperoni Pizza" },
+    new Pizza { PizzaName = "Margarita Pizza" },
+}.AsQueryable();
 
-            var mockPizzaDbSet = CreateMockDbSet(pizzas);
+            var mockPizzaDbSet = new Mock<DbSet<Pizza>>();
+            mockPizzaDbSet.As<IQueryable<Pizza>>().Setup(m => m.Provider).Returns(pizzas.Provider);
+            mockPizzaDbSet.As<IQueryable<Pizza>>().Setup(m => m.Expression).Returns(pizzas.Expression);
+            mockPizzaDbSet.As<IQueryable<Pizza>>().Setup(m => m.ElementType).Returns(pizzas.ElementType);
+            mockPizzaDbSet.As<IQueryable<Pizza>>().Setup(m => m.GetEnumerator()).Returns(pizzas.GetEnumerator());
+
             dbContext.Setup(d => d.Pizza).Returns(mockPizzaDbSet.Object);
 
             var cartModel = new CartModel(dbContext.Object);
