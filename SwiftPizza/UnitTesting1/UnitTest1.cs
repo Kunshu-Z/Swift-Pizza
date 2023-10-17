@@ -463,15 +463,6 @@ namespace UnitTestSP
             Assert.ThrowsException<InvalidOperationException>(() => cartModel.LoadPizzas(null, "asc"));
             // You may need to adjust the exception type based on how you handle special characters.
         }
-
-        private Mock<DbSet<T>> CreateMockDbSet<T>(IQueryable<T> data) where T : class
-        {
-            var mockDbSet = new Mock<DbSet<T>>();
-            mockDbSet.As<IQueryable<T>>().Setup(m => m.Provider).Returns(data.Provider);
-            mockDbSet.As<IQueryable<T>>().Setup(m => m.Expression).Returns(data.Expression);
-            mockDbSet.As<IQueryable<T>>().Setup(m => m.ElementType).Returns(data.ElementType);
-            mockDbSet.As<IQueryable<T>>().Setup(m => m.GetEnumerator()).Returns(data.GetEnumerator());
-            return mockDbSet;
         }
 
     }
