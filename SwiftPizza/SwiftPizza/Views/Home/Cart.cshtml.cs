@@ -31,22 +31,27 @@ namespace SwiftPizza.Views.Home
 
             if (!string.IsNullOrEmpty(SearchTerm))
             {
-                pizzas = pizzas.Where(p => p.PizzaName.Contains(SearchTerm)); ;
+                pizzas = pizzas.Where(p => p.PizzaName.Contains(SearchTerm));
             }
-        
+
+            if (SortOrder == "asc")
             {
-                if (SortOrder == "asc")
-                {
-                    pizzas = pizzas.OrderBy(p => p.PizzaName);
-                }
-                else if (SortOrder == "desc")
-                {
-                    pizzas = pizzas.OrderByDescending(p => p.PizzaName);
-                }
+                pizzas = pizzas.OrderBy(p => p.PizzaName);
+            }
+            else if (SortOrder == "desc")
+            {
+                pizzas = pizzas.OrderByDescending(p => p.PizzaName);
+            }
+
+            // Check for special characters in pizza names before converting to a list
+            if (pizzas.Any(p => HasSpecialCharacters(p.PizzaName)))
+            {
+                throw new InvalidOperationException("Pizza name contains special characters.");
             }
 
             Pizzas = pizzas.ToList();
         }
+
 
         private bool HasSpecialCharacters(string input)
         {
