@@ -3,6 +3,7 @@ using SwiftPizza.Models;
 using SwiftPizza.Data;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.RegularExpressions;
 
 namespace SwiftPizza.Views.Home
 {
@@ -32,8 +33,7 @@ namespace SwiftPizza.Views.Home
             {
                 pizzas = pizzas.Where(p => p.PizzaName.Contains(SearchTerm)); ;
             }
-
-            if (!pizzas.Any(p => HasSpecialCharacters(p.PizzaName)))
+        
             {
                 if (SortOrder == "asc")
                 {
