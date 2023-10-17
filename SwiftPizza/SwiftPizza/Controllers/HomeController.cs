@@ -31,7 +31,7 @@ namespace SwiftPizza.Controllers
 
         public IActionResult Pizzas()
         {
-            var pizzas = _dbContext.Pizza.ToList();
+            var pizzas = _dbContext.Pizzas.ToList();
             return View(pizzas);
         }
 

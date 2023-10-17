@@ -26,7 +26,7 @@ namespace SwiftPizza.Views.Home
             SearchTerm = searchTerm;
             SortOrder = sortOrder;
 
-            var pizzas = _dbContext.Pizza.AsQueryable();
+            var pizzas = _dbContext.Pizzas.AsQueryable();
 
             if (!string.IsNullOrEmpty(SearchTerm))
             {
@@ -35,6 +35,10 @@ namespace SwiftPizza.Views.Home
 
             if (SortOrder == "asc")
             {
+                if (pizzas.Any(p => HasSpecialCharacters(p.PizzaName)))
+                {
+                    throw new InvalidOperationException("Pizza names contain special characters, sorting not allowed.");
+                }
                 pizzas = pizzas.OrderBy(p => p.PizzaName);
             }
             else if (SortOrder == "desc")
@@ -43,6 +47,11 @@ namespace SwiftPizza.Views.Home
             }
 
             Pizzas = pizzas.ToList();
+        }
+
+        private bool HasSpecialCharacters(string input)
+        {
+            return !string.IsNullOrEmpty(input) && input.Any(c => !char.IsLetterOrDigit(c) && !char.IsWhiteSpace(c));
         }
     }
 }

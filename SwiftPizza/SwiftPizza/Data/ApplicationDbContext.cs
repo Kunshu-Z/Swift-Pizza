@@ -3,27 +3,25 @@ using SwiftPizza.Models;
 
 namespace SwiftPizza.Data
 {
-    public interface IApplicationDbContext
+    public class ApplicationDbContext : DbContext
     {
-        DbSet<Pizza> Pizza { get; set; }
-    }
-        public class ApplicationDbContext : DbContext, IApplicationDbContext
-        { 
-            public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
-            {
-            }
+        // Parameterless constructor for Moq
+        public ApplicationDbContext() { }
 
-            protected override void OnModelCreating(ModelBuilder modelBuilder)
-            {
+        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
+        {
+        }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
             modelBuilder.Entity<User>().ToTable("User");
             // any other model configurations can go here
             modelBuilder.Entity<Pizza>().ToTable("Pizza");
         }
 
-        // Define DbSet properties for your tables
-        public DbSet<User> Users { get; set; }
-        public DbSet<Pizza> Pizza { get; set; }
-        public DbSet<Cart> Carts { get; set; }
-        public DbSet<Bank> Bank { get; set; }
+        public virtual DbSet<User> Users { get; set; }
+        public virtual DbSet<Pizza> Pizzas { get; set; }
+        public virtual DbSet<Cart> Carts { get; set; }
+        public virtual DbSet<Bank> Bank { get; set; }
     }
 }

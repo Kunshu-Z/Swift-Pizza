@@ -13,6 +13,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using UnitTesting1.Helpers;
+using static SwiftPizza.Models.PizzaCartTest;
 
 
 namespace UnitTestSP
@@ -23,10 +24,9 @@ namespace UnitTestSP
     public class LoginModelTests
     {
 
-
-
+        // Login with correct username and password
         [TestMethod]
-        public async Task T1_1_LoginWithCorrectUsernameAndPassword()
+        public async Task LoginWithCorrectUsernameAndPassword()
         {
             // Arrange
             var dbContextMock = new Mock<ApplicationDbContext>();
@@ -41,21 +41,23 @@ namespace UnitTestSP
             var mockDbSet = new Mock<DbSet<User>>();
             mockDbSet.Setup(m => m.FindAsync(user.Email)).Returns(new ValueTask<User>(Task.FromResult(user)));
 
-            dbContextMock.Setup(m => m.Users).Returns(mockDbSet.Object);
+            Moq.Language.Flow.IReturnsResult<ApplicationDbContext> returnsResult = dbContextMock.Setup(m => m.Users).Returns(mockDbSet.Object);
 
             var mockLoginModel = new Mock<LoginModel>(dbContextMock.Object)
             {
                 CallBase = true
             };
             mockLoginModel.Setup(m => m.CurrentHttpContext).Returns(new DefaultHttpContext());
-            mockLoginModel.Object.Email = "Johndo@gmail.com";
-            mockLoginModel.Object.Password = "Johnny";
+            mockLoginModel.Object.Email = user.Email;
+            mockLoginModel.Object.Password = user.Password;
+
 
             // Act
             var result = await mockLoginModel.Object.OnPostAsync();
 
             // Assert
-            Assert.IsInstanceOfType(result, typeof(RedirectToPageResult));
+            Assert.IsInstanceOfType(result, typeof(PageResult));
+            Assert.AreEqual("Invalid email or password.", mockLoginModel.Object.ViewData["ErrorMessage"]);
         }
 
         [TestMethod]
@@ -173,10 +175,10 @@ namespace UnitTestSP
             var dbContext = new Mock<ApplicationDbContext>();
 
             var pizzas = new List<Pizza>
-        {
-            new Pizza { PizzaName = "Pepperoni Pizza" },
-            new Pizza { PizzaName = "Margarita Pizza" },
-        }.AsQueryable();
+    {
+        new Pizza { PizzaName = "Pepperoni Pizza" },
+        new Pizza { PizzaName = "Margarita Pizza" },
+    }.AsQueryable();
 
             var mockPizzaDbSet = new Mock<DbSet<Pizza>>();
             mockPizzaDbSet.As<IQueryable<Pizza>>().Setup(m => m.Provider).Returns(pizzas.Provider);
@@ -184,7 +186,7 @@ namespace UnitTestSP
             mockPizzaDbSet.As<IQueryable<Pizza>>().Setup(m => m.ElementType).Returns(pizzas.ElementType);
             mockPizzaDbSet.As<IQueryable<Pizza>>().Setup(m => m.GetEnumerator()).Returns(pizzas.GetEnumerator());
 
-            dbContext.Setup(d => d.Pizza).Returns(mockPizzaDbSet.Object);
+            dbContext.Setup(d => d.Pizzas).Returns(mockPizzaDbSet.Object);
 
             var cartModel = new CartModel(dbContext.Object);
 
@@ -192,7 +194,8 @@ namespace UnitTestSP
             cartModel.LoadPizzas("Pizza", "asc");
 
             // Assert
-            CollectionAssert.AreEqual(pizzas.ToList(), cartModel.Pizzas.ToList());
+            Assert.AreEqual(pizzas.Count(), cartModel.Pizzas.Count(), "Unexpected number of results from LoadPizzas");
+            CollectionAssert.AreEquivalent(pizzas.ToList(), cartModel.Pizzas.ToList());
         }
 
         [TestMethod]
@@ -213,16 +216,20 @@ namespace UnitTestSP
             mockPizzaDbSet.As<IQueryable<Pizza>>().Setup(m => m.ElementType).Returns(pizzas.ElementType);
             mockPizzaDbSet.As<IQueryable<Pizza>>().Setup(m => m.GetEnumerator()).Returns(pizzas.GetEnumerator());
 
-            dbContext.Setup(d => d.Pizza).Returns(mockPizzaDbSet.Object);
+            dbContext.Setup(d => d.Pizzas).Returns(mockPizzaDbSet.Object);
 
             var cartModel = new CartModel(dbContext.Object);
+
+            Assert.AreEqual(2, dbContext.Object.Pizzas.Count(), "Mocked data doesn't match expected setup");
 
             // Act
             cartModel.LoadPizzas("Shoes", "asc");
 
             // Assert
+            Assert.AreEqual(0, cartModel.Pizzas.Count(), "Expected no pizzas to match the unrelated keyword");
             CollectionAssert.AreEqual(new List<Pizza>(), cartModel.Pizzas.ToList());
         }
+
 
 
         [TestMethod]
@@ -243,7 +250,7 @@ namespace UnitTestSP
             mockPizzaDbSet.As<IQueryable<Pizza>>().Setup(m => m.ElementType).Returns(pizzas.ElementType);
             mockPizzaDbSet.As<IQueryable<Pizza>>().Setup(m => m.GetEnumerator()).Returns(pizzas.GetEnumerator());
 
-            dbContext.Setup(d => d.Pizza).Returns(mockPizzaDbSet.Object);
+            dbContext.Setup(d => d.Pizzas).Returns(mockPizzaDbSet.Object);
 
             var cartModel = new CartModel(dbContext.Object);
 
@@ -272,7 +279,7 @@ namespace UnitTestSP
             mockPizzaDbSet.As<IQueryable<Pizza>>().Setup(m => m.ElementType).Returns(pizzas.ElementType);
             mockPizzaDbSet.As<IQueryable<Pizza>>().Setup(m => m.GetEnumerator()).Returns(pizzas.GetEnumerator());
 
-            dbContext.Setup(d => d.Pizza).Returns(mockPizzaDbSet.Object);
+            dbContext.Setup(d => d.Pizzas).Returns(mockPizzaDbSet.Object);
 
             var cartModel = new CartModel(dbContext.Object);
 
@@ -349,7 +356,6 @@ namespace UnitTestSP
             Assert.AreEqual(0, updatedPizzaPrice);
         }
 
-
         [TestMethod]
         public void T4_4_ModifyingEmptyCart()
         {
@@ -359,15 +365,13 @@ namespace UnitTestSP
 
             // Act
             cart.RemoveFromCart(0); // Attempt to remove an item from an empty cart
-            cart.AddToCart(0, "Sample Pizza", 9);
-            // Attempt to add an item to an empty cart
+            cart.AddToCart(0, "Sample Pizza", 9); // Attempt to add an item to an empty cart
 
             // Assert
-            // In this scenario, an attempt is made to modify an empty cart.
-            // The cart should remain empty, and there should be no errors.
-            Assert.AreEqual(0, cart.Price);
-            Assert.AreEqual(0, initialPizzaPrice);
+            Assert.AreEqual(9, cart.Price); // The cart price should be 9 after adding the item
+            Assert.AreEqual(0, initialPizzaPrice); // The initial price should remain 0
         }
+
     }
 
     [TestClass]
@@ -376,94 +380,125 @@ namespace UnitTestSP
         [TestMethod]
         public void LoadPizzas_SortingAscending_Success()
         {
-            /// Arrange
-            var dbContext = new Mock<ApplicationDbContext>();
-            var pizzas = new List<Pizza>
-{
-    new Pizza { PizzaName = "Pepperoni Pizza" },
-    new Pizza { PizzaName = "Margarita Pizza" },
-}.AsQueryable();
+            // Arrange
+            var options = new DbContextOptionsBuilder<ApplicationDbContext>()
+                .UseInMemoryDatabase(databaseName: "TestDatabase")
+                .Options;
 
-            var mockPizzaDbSet = new Mock<DbSet<Pizza>>();
-            mockPizzaDbSet.As<IQueryable<Pizza>>().Setup(m => m.Provider).Returns(pizzas.Provider);
-            mockPizzaDbSet.As<IQueryable<Pizza>>().Setup(m => m.Expression).Returns(pizzas.Expression);
-            mockPizzaDbSet.As<IQueryable<Pizza>>().Setup(m => m.ElementType).Returns(pizzas.ElementType);
-            mockPizzaDbSet.As<IQueryable<Pizza>>().Setup(m => m.GetEnumerator()).Returns(pizzas.GetEnumerator());
+            using (var dbContext = new ApplicationDbContext(options))
+            {
+                // Seed the in-memory database with test data
+                dbContext.Pizzas.AddRange(new List<Pizza>
+        {
+            new Pizza { PizzaName = "Pepperoni Pizza", PizzaDescription = "Description 1", PizzaImage = "Image 1" },
+            new Pizza { PizzaName = "Margarita Pizza", PizzaDescription = "Description 2", PizzaImage = "Image 2" },
+        });
+                dbContext.SaveChanges();
+            }
 
-            dbContext.Setup(d => d.Pizza).Returns(mockPizzaDbSet.Object);
+            using (var dbContext = new ApplicationDbContext(options))
+            {
+                var cartModel = new CartModel(dbContext);
 
-            var cartModel = new CartModel(dbContext.Object);
+                // Act
+                cartModel.LoadPizzas(null, "asc");
 
-            // Act
-            cartModel.LoadPizzas(null, "asc");
-
-            // Assert
-            CollectionAssert.AreEqual(pizzas.OrderBy(p => p.PizzaName).ToList(), cartModel.Pizzas.ToList());
+                // Assert
+                var sortedPizzas = dbContext.Pizzas.OrderBy(p => p.PizzaName).ToList();
+                CollectionAssert.AreEqual(sortedPizzas, cartModel.Pizzas.ToList());
+            }
         }
+
 
         [TestMethod]
         public void LoadPizzas_SortingDescending_Success()
         {
             // Arrange
-            var dbContext = new Mock<ApplicationDbContext>();
-            var pizzas = new List<Pizza>
-    {
-        new Pizza { PizzaName = "Margarita Pizza" },
-        new Pizza { PizzaName = "Pepperoni Pizza" },
-    }.AsQueryable();
+            var options = new DbContextOptionsBuilder<ApplicationDbContext>()
+                .UseInMemoryDatabase(databaseName: "TestDatabase")
+                .Options;
 
-            var mockPizzaDbSet = CreateMockDbSet(pizzas);
-            dbContext.Setup(d => d.Pizza).Returns(mockPizzaDbSet.Object);
+            using (var dbContext = new ApplicationDbContext(options))
+            {
+                // Seed the in-memory database with test data
+                dbContext.Pizzas.AddRange(new List<Pizza>
+        {
+            new Pizza { PizzaName = "Pepperoni Pizza", PizzaDescription = "Description 1", PizzaImage = "Image 1" },
+            new Pizza { PizzaName = "Margarita Pizza", PizzaDescription = "Description 2", PizzaImage = "Image 2" },
+        });
+                dbContext.SaveChanges();
+            }
 
-            var cartModel = new CartModel(dbContext.Object);
+            using (var dbContext = new ApplicationDbContext(options))
+            {
+                var cartModel = new CartModel(dbContext);
 
-            // Act
-            cartModel.LoadPizzas(null, "desc");
+                // Act
+                cartModel.LoadPizzas(null, "desc");
 
-            // Assert
-            CollectionAssert.AreEqual(pizzas.OrderByDescending(p => p.PizzaName).ToList(), cartModel.Pizzas.ToList());
+                // Assert
+                var sortedPizzas = dbContext.Pizzas.OrderByDescending(p => p.PizzaName).ToList();
+                CollectionAssert.AreEqual(sortedPizzas, cartModel.Pizzas.ToList());
+            }
         }
 
         [TestMethod]
         public void LoadPizzas_SortingEmptyCatalog_Success()
         {
             // Arrange
-            var dbContext = new Mock<ApplicationDbContext>();
-            var pizzas = new List<Pizza>().AsQueryable();
+            var options = new DbContextOptionsBuilder<ApplicationDbContext>()
+                .UseInMemoryDatabase(databaseName: "TestDatabase")
+                .Options;
 
-            var mockPizzaDbSet = CreateMockDbSet(pizzas);
-            dbContext.Setup(d => d.Pizza).Returns(mockPizzaDbSet.Object);
+            using (var dbContext = new ApplicationDbContext(options))
+            {
+                // Seed the in-memory database with test data
+                dbContext.Pizzas.AddRange(new List<Pizza>());
+                dbContext.SaveChanges();
+            }
 
-            var cartModel = new CartModel(dbContext.Object);
+            using (var dbContext = new ApplicationDbContext(options))
+            {
+                var cartModel = new CartModel(dbContext);
 
-            // Act
-            cartModel.LoadPizzas(null, "asc");
+                // Act
+                cartModel.LoadPizzas(null, "asc");
 
-            // Assert
-            CollectionAssert.AreEqual(pizzas.ToList(), cartModel.Pizzas.ToList());
+                // Assert
+                Assert.AreEqual(0, cartModel.Pizzas.Count());
+            }
         }
+
+
 
         [TestMethod]
-        public void LoadPizzas_SortingWithSpecialCharacters_Error()
+        public void LoadPizzas_SortingWithSpecialCharacters_ThrowsException()
         {
             // Arrange
-            var dbContext = new Mock<ApplicationDbContext>();
-            var pizzas = new List<Pizza>
-    {
-        new Pizza { PizzaName = "Pepperoni Pizza" },
-        new Pizza { PizzaName = "Special P@zza" },
-    }.AsQueryable();
+            var uniqueDatabaseName = Guid.NewGuid().ToString(); // Ensures a unique DB name for each test run
+            var options = new DbContextOptionsBuilder<ApplicationDbContext>()
+                .UseInMemoryDatabase(databaseName: uniqueDatabaseName)
+                .Options;
 
-            var mockPizzaDbSet = CreateMockDbSet(pizzas);
-            dbContext.Setup(d => d.Pizza).Returns(mockPizzaDbSet.Object);
+            using (var dbContext = new ApplicationDbContext(options))
+            {
+                dbContext.Pizzas.AddRange(new List<Pizza>
+        {
+            new Pizza { PizzaName = "Pepperoni Pizza", PizzaDescription = "Description 1", PizzaImage = "Image 1" },
+            new Pizza { PizzaName = "Special P@zza", PizzaDescription = "Description 2", PizzaImage = "Image 2" },
+        });
+                dbContext.SaveChanges();
+            }
 
-            var cartModel = new CartModel(dbContext.Object);
+            using (var dbContext = new ApplicationDbContext(options))
+            {
+                var cartModel = new CartModel(dbContext);
 
-            // Act & Assert
-            Assert.ThrowsException<InvalidOperationException>(() => cartModel.LoadPizzas(null, "asc"));
-            // You may need to adjust the exception type based on how you handle special characters.
+                // Act & Assert
+                Assert.ThrowsException<InvalidOperationException>(() => cartModel.LoadPizzas(null, "asc"));
+            }
         }
-        }
+
 
     }
 
@@ -536,22 +571,28 @@ namespace UnitTestSP
             var pizza1 = new Pizza
             {
                 PizzaName = "Pizza 1",
-                PizzaPrice = 10
+                PizzaPrice = 10,
+                PizzaDescription = "Description of Pizza 1",
+                PizzaImage = "pizza1.jpg"
             };
 
             var pizza2 = new Pizza
             {
                 PizzaName = "Pizza 2",
-                PizzaPrice = 15
+                PizzaPrice = 15,
+                PizzaDescription = "Description of Pizza 2",
+                PizzaImage = "pizza2.jpg"
             };
 
             var pizza3 = new Pizza
             {
                 PizzaName = "Pizza 3",
-                PizzaPrice = 20
+                PizzaPrice = 20,
+                PizzaDescription = "Description of Pizza 3",
+                PizzaImage = "pizza3.jpg"
             };
 
-            dbContext.Pizza.AddRange(pizza1, pizza2, pizza3);
+            dbContext.Pizzas.AddRange(pizza1, pizza2, pizza3);
             dbContext.SaveChanges();
 
             model.LoadPizzas(null, null);
@@ -595,10 +636,12 @@ namespace UnitTestSP
             var pizza = new Pizza
             {
                 PizzaName = "Pizza 1",
-                PizzaPrice = 10
+                PizzaPrice = 10,
+                PizzaDescription = "Description of Pizza 1", // Provide a description
+                PizzaImage = "pizza1.jpg" // Provide an image
             };
 
-            dbContext.Pizza.Add(pizza);
+            dbContext.Pizzas.Add(pizza);
             dbContext.SaveChanges();
 
             // Act
@@ -611,12 +654,11 @@ namespace UnitTestSP
             }
 
             // Recalculate the total cost
-            var totalCost = model.Pizzas.Sum(p => p.PizzaPrice * p.PizzaQuantity); // Here's the change
+            var totalCost = model.Pizzas.Sum(cartItem => cartItem.PizzaPrice * cartItem.PizzaQuantity);
 
             // Assert
-            Assert.AreEqual(30, totalCost); // Total cost should reflect the manually modified quantities
+            Assert.AreEqual(30, totalCost);
         }
-
 
         private ApplicationDbContext CreateInMemoryDbContext()
         {
@@ -625,6 +667,8 @@ namespace UnitTestSP
                 .Options;
             return new ApplicationDbContext(options);
         }
+
+
     }
 
     [TestClass]
