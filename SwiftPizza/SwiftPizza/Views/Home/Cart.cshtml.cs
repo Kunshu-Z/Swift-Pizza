@@ -30,20 +30,19 @@ namespace SwiftPizza.Views.Home
 
             if (!string.IsNullOrEmpty(SearchTerm))
             {
-                pizzas = pizzas.Where(p => EF.Functions.Like(p.PizzaName, $"%{SearchTerm}%"));
+                pizzas = pizzas.Where(p => p.PizzaName.Contains(SearchTerm)); ;
             }
 
-            if (SortOrder == "asc")
+            if (!pizzas.Any(p => HasSpecialCharacters(p.PizzaName)))
             {
-                if (pizzas.Any(p => HasSpecialCharacters(p.PizzaName)))
+                if (SortOrder == "asc")
                 {
-                    throw new InvalidOperationException("Pizza names contain special characters, sorting not allowed.");
+                    pizzas = pizzas.OrderBy(p => p.PizzaName);
                 }
-                pizzas = pizzas.OrderBy(p => p.PizzaName);
-            }
-            else if (SortOrder == "desc")
-            {
-                pizzas = pizzas.OrderByDescending(p => p.PizzaName);
+                else if (SortOrder == "desc")
+                {
+                    pizzas = pizzas.OrderByDescending(p => p.PizzaName);
+                }
             }
 
             Pizzas = pizzas.ToList();

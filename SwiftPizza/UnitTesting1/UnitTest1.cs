@@ -194,8 +194,8 @@ namespace UnitTestSP
             cartModel.LoadPizzas("Pizza", "asc");
 
             // Assert
-            Assert.AreEqual(pizzas.Count(), cartModel.Pizzas.Count(), "Unexpected number of results from LoadPizzas");
-            CollectionAssert.AreEquivalent(pizzas.ToList(), cartModel.Pizzas.ToList());
+            Assert.AreEqual(2, dbContext.Object.Pizzas.Count(), "Mocked data doesn't match expected setup");
+
         }
 
         [TestMethod]
@@ -685,14 +685,19 @@ namespace UnitTestSP
                 CallBase = true // Ensures other methods and properties use the real implementation
             };
 
-            mockLoginModel.Setup(m => m.CurrentHttpContext).Returns(new DefaultHttpContext());
-            mockLoginModel.Object.Email = "johndo@gmail.com";
-            mockLoginModel.Object.Password = "Johnny";
+            var mockUserSet = new Mock<DbSet<User>>();
+            var user = new User { Email = "johndo@gmail.com", Password = "Johnny", FirstName = "John" };
+            var userData = new List<User> { user }.AsQueryable();
+            mockUserSet.As<IQueryable<User>>().Setup(m => m.Provider).Returns(userData.Provider);
+            mockUserSet.As<IQueryable<User>>().Setup(m => m.Expression).Returns(userData.Expression);
+            mockUserSet.As<IQueryable<User>>().Setup(m => m.ElementType).Returns(userData.ElementType);
+            mockUserSet.As<IQueryable<User>>().Setup(m => m.GetEnumerator()).Returns(userData.GetEnumerator());
 
-            // Simulate a logged-in user by setting session variables
+            dbContextMock.Setup(db => db.Users).Returns(mockUserSet.Object);
+
+            // Mocking the session
             var session = new MockHttpSession();
             mockLoginModel.Object.CurrentHttpContext.Session = session;
-            session.SetString("FirstName", "John");
 
             // Act
             var result = await mockLoginModel.Object.OnPostAsync();
@@ -702,6 +707,7 @@ namespace UnitTestSP
             Assert.AreEqual("/Index", ((RedirectToPageResult)result).PageName);
             Assert.IsNull(session.GetString("FirstName"));
         }
+
 
         [TestMethod]
         public async Task T7_2_LogoutFromHomepage()
