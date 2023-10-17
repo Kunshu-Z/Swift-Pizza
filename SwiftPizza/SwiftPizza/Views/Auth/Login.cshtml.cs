@@ -4,7 +4,9 @@
 /// </summary>
 
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.ModelBinding;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.AspNetCore.Mvc.ViewFeatures;
 using Microsoft.EntityFrameworkCore;
 using SwiftPizza.Data;
 
@@ -71,9 +73,18 @@ namespace SwiftPizza.Views.Home
 
         private void SetErrorMessage(string message)
         {
-            if (ViewData != null)
+            if (string.IsNullOrEmpty(message))
+            {
+                return;
+            }
+
+            if (ViewData.ContainsKey("ErrorMessage"))
             {
                 ViewData["ErrorMessage"] = message;
+            }
+            else
+            {
+                ViewData.Add("ErrorMessage", message);
             }
         }
 
