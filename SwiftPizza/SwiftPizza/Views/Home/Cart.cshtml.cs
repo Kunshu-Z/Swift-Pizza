@@ -3,6 +3,7 @@ using SwiftPizza.Models;
 using SwiftPizza.Data;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.RegularExpressions;
 
 namespace SwiftPizza.Views.Home
 {
@@ -26,23 +27,30 @@ namespace SwiftPizza.Views.Home
             SearchTerm = searchTerm;
             SortOrder = sortOrder;
 
-            var pizzas = _dbContext.Pizza.AsQueryable();
+            var pizzas = _dbContext.Pizzas.AsQueryable();
 
             if (!string.IsNullOrEmpty(SearchTerm))
             {
-                pizzas = pizzas.Where(p => EF.Functions.Like(p.PizzaName, $"%{SearchTerm}%"));
+                pizzas = pizzas.Where(p => p.PizzaName.Contains(SearchTerm)); ;
             }
-
-            if (SortOrder == "asc")
+        
             {
-                pizzas = pizzas.OrderBy(p => p.PizzaName);
-            }
-            else if (SortOrder == "desc")
-            {
-                pizzas = pizzas.OrderByDescending(p => p.PizzaName);
+                if (SortOrder == "asc")
+                {
+                    pizzas = pizzas.OrderBy(p => p.PizzaName);
+                }
+                else if (SortOrder == "desc")
+                {
+                    pizzas = pizzas.OrderByDescending(p => p.PizzaName);
+                }
             }
 
             Pizzas = pizzas.ToList();
+        }
+
+        private bool HasSpecialCharacters(string input)
+        {
+            return !string.IsNullOrEmpty(input) && input.Any(c => !char.IsLetterOrDigit(c) && !char.IsWhiteSpace(c));
         }
     }
 }
